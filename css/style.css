@@ -9,7 +9,7 @@ body {
     display: grid;
     grid-auto-columns: 1fr;
     grid-template-columns: 1fr;
-    grid-template-rows: 4em 2.8fr auto;
+    grid-template-rows: max-content auto max-content;
     gap: 0px 0px;
     grid-template-areas:
         "navBar"
@@ -19,24 +19,67 @@ body {
 
 .header_container {
     grid-area: navBar;
+    min-height: 4rem;
 }
 
 .main_container {
     grid-area: main;
+    margin-bottom: 3rem;
 }
+
+/* HEADER */
+
+.logo_brand {
+    margin-left: 1.2rem;
+    background-color: rgb(188, 188, 188);
+    width: 70px;
+    height: 70px;
+    transition: .25s all ease-in-out;
+}
+
+.logo_brand:hover {
+    filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.279));
+}
+
+.nav-link {
+    margin: 1.3rem;
+    border-radius: 5px;
+    background-color: rgb(255, 255, 255);
+    filter: drop-shadow(2px 5px 8px rgba(0, 0, 0, 0.134));
+    transition: 1.8s all ease-in-out;
+}
+
+.nav-link:hover {
+    filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.232));
+}
+
+.btn_donate {
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    margin: auto 0 auto 1.5rem;
+    border-radius: 25px;
+    background-color: rgba(0, 0, 0, 0.438);
+    color: white;
+    text-decoration: none;
+    padding: .5rem;
+    transition: .25s all ease-in-out;
+    box-shadow: 2px 5px 18px rgba(0, 0, 0, 0.134);
+}
+
+.btn_donate:hover {
+    color: white;
+    background-color: rgba(0, 0, 0, 0.525);
+    box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.346);
+}
+
+/* FOOTER */
 
 .footer_container {
     grid-area: footer;
 }
 
 
-.header_container {
-    height: 2rem;
-}
-
-.main_container {
-    height: 50vh;
-}
 
 .footer_container {
     height: auto;
@@ -50,7 +93,6 @@ body {
     grid-auto-columns: 1fr;
     grid-template-columns: 0.8fr 0.1fr 3.1fr 0.1fr 1fr;
     gap: 0px 0px;
-
 }
 
 .footer_img {
@@ -73,8 +115,10 @@ body {
 
 .footer_tittle {
     margin: 5.5rem 3rem 3rem 3rem;
+    font-size: 1.6rem;
     font-family: 'Indie Flower', cursive;
     text-align: center;
+    font-weight: 600;
 }
 
 .footer_subtittle {
@@ -91,11 +135,11 @@ body {
 }
 
 .footer_copyRight {
+    font-size: 1rem;
     display: flex;
     justify-content: center;
     margin: .5rem;
 }
-
 
 .footer_stick {
     width: 2px;
@@ -131,6 +175,7 @@ body {
 
 .footer_tittle-icons {
     margin: 0 2rem;
+    font-size: 1rem;
     text-align: center;
 }
 
@@ -138,10 +183,102 @@ body {
     text-decoration: none;
 }
 
+/* CARD */
+
+.cardList {
+    width: 80%;
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card_container {
+    margin: 2rem;
+    width: 300px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.144);
+    overflow: hidden;
+    transition: all .25s ease-in-out;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.173);
+}
+
+.card_container:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.379);
+}
+
+.card_text {
+    width: 250px;
+    padding: 11rem 20rem 4rem 20rem;
+    text-align: center;
+    position: relative;
+    right: 0;
+    transition: .25s all ease-in-out;
+}
+
+.card_text:hover {
+    right: 20rem;
+}
+
+.card_container-images {
+    margin: 2rem;
+    width: 1028px;
+    height: 300px;
+    background-color: rgba(0, 0, 0, 0.144);
+    overflow: hidden;
+    transition: all .25s ease-in-out;
+}
+
+.card_container-images:hover {
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.379);
+}
+
+.card_text-images {
+    width: 250px;
+    padding: 20rem 59.3rem 0rem 5rem;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    transition: .25s all ease-in-out;
+}
+
+.card_text-images:hover {
+    bottom: 10rem;
+}
+
+.card_text-tittle {
+    margin-bottom: .3rem;
+    width: 300px;
+    font-size: 2rem;
+    font-family: 'Indie Flower', cursive;
+}
+
+.card_text-content {
+    width: 300px;
+    font-size: 1.3rem;
+    text-align: center;
+    font-family: 'Indie Flower', cursive;
+}
+
 @media screen and (max-width: 1440px) {
     .footer_img {
         width: 150px;
         height: 150px;
+    }
+}
+
+@media screen and (max-width: 1364px) {
+    .card_container-images {
+        width: 300px;
+    }
+
+    .card_text-images {
+        width: 250px;
+        padding: 20rem 59.3rem 0rem 0rem;
+        text-align: center;
+        position: relative;
+        bottom: 0;
+        transition: .25s all ease-in-out;
     }
 }
 
@@ -183,11 +320,11 @@ body {
         justify-content: space-evenly;
     }
 
-    .footer_tittle{
+    .footer_tittle {
         margin: 2rem 3rem;
     }
 
-    .footer_tittle-icons{
+    .footer_tittle-icons {
         font-size: 1.2rem;
     }
 }
