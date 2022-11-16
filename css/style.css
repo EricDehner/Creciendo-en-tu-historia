@@ -29,6 +29,11 @@ body {
 
 /* HEADER */
 
+.navbar_container {
+    display: flex;
+    justify-content: space-around;
+}
+
 .logo_brand {
     margin-left: 1.2rem;
     background-color: rgb(188, 188, 188);
@@ -260,6 +265,85 @@ body {
     font-family: 'Indie Flower', cursive;
 }
 
+/* CAROUSEL */
+.carousell {
+    width: 100%;
+    overflow: hidden;
+    margin-bottom: 5rem;
+}
+
+.wave_container {
+    position: absolute;
+    width: 100%;
+    bottom: -2rem;
+    z-index: 9;
+    overflow: hidden;
+}
+
+.content-container {
+    position: absolute;
+    bottom: 35%;
+    left: 10%;
+    z-index: 10;
+}
+
+.Imagen1 {
+    background-color: rgba(255, 0, 0, 0.388);
+    width: 100%;
+    height: 85vh;
+}
+
+.Imagen2 {
+    background-color: rgba(255, 247, 0, 0.388);
+    width: 100%;
+    height: 85vh;
+}
+
+.Imagen3 {
+    background-color: rgba(38, 255, 0, 0.388);
+    width: 100%;
+    height: 85vh;
+}
+
+.Imagen4 {
+    background-color: rgba(0, 255, 217, 0.388);
+    width: 100%;
+    height: 85vh;
+}
+
+.Imagen5 {
+    background-color: rgba(0, 30, 255, 0.388);
+    width: 100%;
+    height: 85vh;
+}
+
+.Imagen6 {
+    background-color: rgba(255, 0, 242, 0.388);
+    width: 100%;
+    height: 85vh;
+}
+
+.context_text {
+    width: 50%;
+    font-size: 1.2rem;
+    margin-bottom: 2.5rem;
+    font-family: 'Poppins', sans-serif;
+}
+
+.btn_donate-large {
+    font-size: 1.7rem;
+    padding: .2rem 1.5rem .4rem;
+    border-radius: 22px;
+    border: 0;
+    box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.403);
+    transition: all .1s ease-in-out;
+}
+
+.btn_donate-large:hover {
+    box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.446);
+}
+
+
 @media screen and (max-width: 1440px) {
     .footer_img {
         width: 150px;
@@ -279,6 +363,10 @@ body {
         position: relative;
         bottom: 0;
         transition: .25s all ease-in-out;
+    }
+
+    .content-container {
+        bottom: 25%;
     }
 }
 
@@ -329,6 +417,23 @@ body {
     }
 }
 
+@media screen and (max-width: 1107px) {
+    .content-container {
+        bottom: 20%;
+    }
+
+    .wave_container {
+        bottom: -1.5rem;
+    }
+}
+
+@media screen and (max-width: 900px) {
+
+    .wave_container {
+        bottom: -1.2rem;
+    }
+}
+
 @media screen and (max-width: 828px) {
     .footer_tittle {
         font-size: 1.2rem;
@@ -336,6 +441,30 @@ body {
 
     .footer_subtittle {
         font-size: 1rem;
+    }
+
+    .content-container {
+        bottom: 15%;
+    }
+
+    .wave_container {
+        bottom: -1rem;
+    }
+}
+
+@media screen and (max-width: 790px) {
+    .wave_container {
+        bottom: -.5rem;
+    }
+}
+
+@media screen and (max-width: 670px) {
+    .wave_container {
+        bottom: 1rem;
+    }
+
+    .context_text {
+        width: 70%;
     }
 }
 
@@ -424,5 +553,19 @@ body {
     .footer_copyRight {
         font-size: .7rem;
         text-align: center;
+    }
+
+    .wave_container {
+        bottom: 2rem;
+    }
+
+    .context_text {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 365px) {
+    .wave_container {
+        z-index: -2;
     }
 }
