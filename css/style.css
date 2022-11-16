@@ -1,0 +1,291 @@
+* {
+    margin: 0;
+    padding: 0%;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr;
+    grid-template-rows: 4em 2.8fr auto;
+    gap: 0px 0px;
+    grid-template-areas:
+        "navBar"
+        "main"
+        "footer";
+}
+
+.header_container {
+    grid-area: navBar;
+}
+
+.main_container {
+    grid-area: main;
+}
+
+.footer_container {
+    grid-area: footer;
+}
+
+
+.header_container {
+    height: 2rem;
+}
+
+.main_container {
+    height: 50vh;
+}
+
+.footer_container {
+    height: auto;
+    background: rgb(233, 233, 233);
+    background: linear-gradient(0deg, rgba(233, 233, 233, 1) 10%, rgba(196, 181, 182, 1) 100%);
+}
+
+.footer {
+    overflow: hidden;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 0.8fr 0.1fr 3.1fr 0.1fr 1fr;
+    gap: 0px 0px;
+
+}
+
+.footer_img {
+    width: 200px;
+    height: 200px;
+    background-color: rgba(0, 0, 0, 0.206);
+    margin: 4rem;
+}
+
+.footer_text {
+    display: flex;
+    justify-content: center;
+}
+
+.footer_text-column {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer_tittle {
+    margin: 5.5rem 3rem 3rem 3rem;
+    font-family: 'Indie Flower', cursive;
+    text-align: center;
+}
+
+.footer_subtittle {
+    text-align: center;
+    font-size: 1.4rem;
+    margin-bottom: 1rem;
+    font-family: 'Indie Flower', cursive;
+    color: rgba(0, 0, 0, 0.787);
+    transition: .2s all ease-in-out;
+}
+
+.footer_subtittle:hover {
+    color: rgb(0, 0, 0);
+}
+
+.footer_copyRight {
+    display: flex;
+    justify-content: center;
+    margin: .5rem;
+}
+
+
+.footer_stick {
+    width: 2px;
+    margin: 2rem 0 .5rem 0;
+    background-color: white;
+}
+
+.footer_socialNetworks {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer_container-icons {
+    margin-top: 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.footer_icon {
+    font-size: 2rem;
+    margin: .5rem;
+    color: rgba(0, 0, 0, 0.787);
+    transition: .2s all ease-in-out;
+}
+
+.footer_icon:hover {
+    color: black;
+    filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.158));
+}
+
+.footer_tittle-icons {
+    margin: 0 2rem;
+    text-align: center;
+}
+
+.decoration {
+    text-decoration: none;
+}
+
+@media screen and (max-width: 1440px) {
+    .footer_img {
+        width: 150px;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 1358px) {
+    .footer {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        gap: 0px 0px;
+        grid-template-areas:
+            "Logo SocialNetworks"
+            "Text Text";
+    }
+
+    .footer_img {
+        grid-area: Logo;
+    }
+
+    .footer_socialNetworks {
+        grid-area: SocialNetworks;
+    }
+
+    .footer_text {
+        grid-area: Text;
+    }
+
+    .footer_img {
+        margin: 4rem auto;
+        width: 200px;
+        height: 200px;
+    }
+
+    .footer_container-icons {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .footer_tittle{
+        margin: 2rem 3rem;
+    }
+
+    .footer_tittle-icons{
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 828px) {
+    .footer_tittle {
+        font-size: 1.2rem;
+    }
+
+    .footer_subtittle {
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width: 571px) {
+    .footer {
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: auto 1fr auto;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "Logo"
+            "Text"
+            "SocialNetworks";
+    }
+
+    .footer_img {
+        grid-area: Logo;
+    }
+
+
+    .footer_text {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto auto;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "conocenos conocenos conocenos"
+            "quieroSerParte quieroSerParte quieroSerParte"
+            "quieroDonar quieroDonar quieroDonar";
+        grid-area: Text;
+    }
+
+    .conocenos {
+        grid-area: conocenos;
+    }
+
+    .quieroSerParte {
+        grid-area: quieroSerParte;
+    }
+
+    .quieroDonar {
+        grid-area: quieroDonar;
+    }
+
+    .footer_socialNetworks {
+        grid-area: SocialNetworks;
+    }
+
+    .footer_tittle {
+        font-size: 1.6rem;
+    }
+
+    .footer_subtittle {
+        font-size: 1.4rem;
+    }
+
+    .footer_copyRight {
+        font-size: .9rem;
+    }
+
+    .footer_socialNetworks {
+        margin: 3.8rem auto -2rem;
+    }
+
+    .footer_img {
+        margin-bottom: .5rem;
+    }
+
+    .footer_container-icons {
+        width: 100%;
+        margin-top: 2rem;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+    }
+
+    .footer_tittle {
+        margin: 2rem 3rem;
+    }
+}
+
+@media screen and (max-width: 464px) {
+    .footer_copyRight {
+        font-size: .7rem;
+        text-align: center;
+    }
+}
