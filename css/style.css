@@ -46,6 +46,11 @@ body {
     filter: drop-shadow(2px 5px 5px rgba(0, 0, 0, 0.279));
 }
 
+.navbar-nav {
+    justify-content: center;
+    align-items: center;
+}
+
 .nav-link {
     margin: 1.3rem;
     border-radius: 5px;
@@ -83,8 +88,6 @@ body {
 .footer_container {
     grid-area: footer;
 }
-
-
 
 .footer_container {
     height: auto;
@@ -196,6 +199,7 @@ body {
     margin: auto;
     justify-content: center;
     flex-wrap: wrap;
+    overflow: hidden;
 }
 
 .card_container {
@@ -240,7 +244,7 @@ body {
 
 .card_text-images {
     width: 250px;
-    padding: 20rem 59.3rem 0rem 5rem;
+    padding: 20rem 59.3rem 2rem 5rem;
     text-align: center;
     position: relative;
     bottom: 0;
@@ -270,14 +274,7 @@ body {
     width: 100%;
     overflow: hidden;
     margin-bottom: 5rem;
-}
-
-.wave_container {
-    position: absolute;
-    width: 100%;
-    bottom: -2rem;
-    z-index: 9;
-    overflow: hidden;
+    position: relative;
 }
 
 .content-container {
@@ -285,6 +282,14 @@ body {
     bottom: 35%;
     left: 10%;
     z-index: 10;
+}
+
+.wave_container {
+    position: absolute;
+    width: 100%;
+    bottom: -5rem;
+    z-index: 9;
+    overflow: hidden;
 }
 
 .Imagen1 {
@@ -351,6 +356,12 @@ body {
     }
 }
 
+@media screen and (max-width: 1370px) {
+    .cardList {
+        width: 90%;
+    }
+}
+
 @media screen and (max-width: 1364px) {
     .card_container-images {
         width: 300px;
@@ -367,6 +378,10 @@ body {
 
     .content-container {
         bottom: 25%;
+    }
+
+    .cardList {
+        width: 80%;
     }
 }
 
@@ -417,6 +432,27 @@ body {
     }
 }
 
+@media screen and (max-width: 1200px) {
+    .nav-link {
+        filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0.134));
+    }
+
+    .nav-link:hover {
+        width: auto;
+        display: flex;
+        justify-content: center;
+        border-radius: 25px;
+        background-color: rgba(255, 255, 255, 0.404);
+        text-decoration: none;
+        padding: .5rem;
+        box-shadow: 2px 5px 18px rgba(0, 0, 0, 0.134);
+    }
+
+    .btn_donate {
+        margin: 1rem 0 2rem 0;
+    }
+}
+
 @media screen and (max-width: 1107px) {
     .content-container {
         bottom: 20%;
@@ -460,7 +496,7 @@ body {
 
 @media screen and (max-width: 670px) {
     .wave_container {
-        bottom: 1rem;
+        bottom: -1rem;
     }
 
     .context_text {
@@ -547,6 +583,10 @@ body {
     .footer_tittle {
         margin: 2rem 3rem;
     }
+
+    .card_container {
+        margin: 2rem 0;
+    }
 }
 
 @media screen and (max-width: 464px) {
@@ -556,16 +596,53 @@ body {
     }
 
     .wave_container {
-        bottom: 2rem;
+        bottom: -1rem;
     }
 
     .context_text {
         width: 90%;
     }
+
+    .card_container {
+        margin: 2rem 0;
+    }
+
+    .card_container-images {
+        margin: 2rem 0;
+    }
 }
 
-@media screen and (max-width: 365px) {
-    .wave_container {
-        z-index: -2;
+@media screen and (max-width: 376px) {
+    .cardList {
+        width: 100%;
+    }
+
+    .card_container {
+        width: 250px;
+        height: 250px;
+    }
+
+    .card_container-images {
+        width: 250px;
+        height: 250px;
+    }
+
+
+    .card_text-tittle {
+        font-size: 1.6rem;
+        width: 250px;
+    }
+
+    .card_text-content {
+        margin: auto;
+        width: 230px;
+    }
+
+    .card_text {
+        padding: 7rem 20rem 4rem 20.5rem;
+    }
+
+    .card_text-images {
+        padding: 17rem 59.3rem 2rem .8rem;
     }
 }
