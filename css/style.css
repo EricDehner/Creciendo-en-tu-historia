@@ -343,10 +343,14 @@ body {
 }
 
 .context_text {
-    width: 50%;
+    width: 90%;
     font-family: 'Indie Flower', cursive;
     font-size: 1.6rem;
     margin-bottom: 2.5rem;
+}
+
+.context_text {
+    width: 90%;
 }
 
 .btn_donate-large {
@@ -361,9 +365,14 @@ body {
 .btn_donate-large:hover {
     box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.446);
 }
+
 @media screen and (max-width: 1700px) {
     .content-container {
         left: 26%;
+    }
+
+    .context_text {
+        width: 80%;
     }
 }
 
@@ -371,12 +380,18 @@ body {
     .content-container {
         left: 24%;
     }
+
+    .context_text {
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 1500px) {
     .content-container {
         left: 23%;
     }
+
+
 }
 
 @media screen and (max-width: 1440px) {
@@ -646,7 +661,7 @@ body {
     }
 
     .context_text {
-        width: 90%;
+        width: 75%;
     }
 
     .card_container {
