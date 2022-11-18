@@ -36,9 +36,9 @@ body {
 
 .logo_brand {
     margin-left: 1.2rem;
-    background-color: rgb(188, 188, 188);
-    width: 70px;
-    height: 70px;
+
+    width: 100px;
+    height: 100px;
     transition: .25s all ease-in-out;
 }
 
@@ -53,6 +53,7 @@ body {
 
 .nav-link {
     margin: 1.3rem;
+    font-family: 'Poppins', sans-serif;
     border-radius: 5px;
     background-color: rgb(255, 255, 255);
     filter: drop-shadow(2px 5px 8px rgba(0, 0, 0, 0.134));
@@ -64,6 +65,7 @@ body {
 }
 
 .btn_donate {
+    font-family: 'Poppins', sans-serif;
     width: 8rem;
     display: flex;
     justify-content: center;
@@ -92,7 +94,7 @@ body {
 .footer_container {
     height: auto;
     background: rgb(233, 233, 233);
-    background: linear-gradient(0deg, rgba(233, 233, 233, 1) 10%, rgba(196, 181, 182, 1) 100%);
+    background: linear-gradient(0deg, rgba(233, 233, 233, 1) 10%, #38b1c1 100%);
 }
 
 .footer {
@@ -106,8 +108,12 @@ body {
 .footer_img {
     width: 200px;
     height: 200px;
-    background-color: rgba(0, 0, 0, 0.206);
     margin: 4rem;
+}
+
+.footer_img-container {
+    display: flex;
+    justify-content: center;
 }
 
 .footer_text {
@@ -123,17 +129,17 @@ body {
 
 .footer_tittle {
     margin: 5.5rem 3rem 3rem 3rem;
-    font-size: 1.6rem;
-    font-family: 'Indie Flower', cursive;
+    font-size: 1.2rem;
+    font-family: 'Poppins', sans-serif;
     text-align: center;
     font-weight: 600;
 }
 
 .footer_subtittle {
     text-align: center;
-    font-size: 1.4rem;
+    font-size: 1.1rem;
     margin-bottom: 1rem;
-    font-family: 'Indie Flower', cursive;
+    font-family: 'Poppins', sans-serif;
     color: rgba(0, 0, 0, 0.787);
     transition: .2s all ease-in-out;
 }
@@ -146,6 +152,8 @@ body {
     font-size: 1rem;
     display: flex;
     justify-content: center;
+    font-family: 'Poppins', sans-serif;
+    font-size: .9rem;
     margin: .5rem;
 }
 
@@ -182,6 +190,7 @@ body {
 }
 
 .footer_tittle-icons {
+    font-family: 'Poppins', sans-serif;
     margin: 0 2rem;
     font-size: 1rem;
     text-align: center;
@@ -235,6 +244,7 @@ body {
     height: 300px;
     background-color: rgba(0, 0, 0, 0.144);
     overflow: hidden;
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.173);
     transition: all .25s ease-in-out;
 }
 
@@ -280,8 +290,12 @@ body {
 .content-container {
     position: absolute;
     bottom: 35%;
-    left: 10%;
+    left: 28%;
     z-index: 10;
+}
+
+.content-container {
+    left: 28%;
 }
 
 .wave_container {
@@ -330,9 +344,9 @@ body {
 
 .context_text {
     width: 50%;
-    font-size: 1.2rem;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.6rem;
     margin-bottom: 2.5rem;
-    font-family: 'Poppins', sans-serif;
 }
 
 .btn_donate-large {
@@ -347,18 +361,42 @@ body {
 .btn_donate-large:hover {
     box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.446);
 }
+@media screen and (max-width: 1700px) {
+    .content-container {
+        left: 26%;
+    }
+}
 
+@media screen and (max-width: 1600px) {
+    .content-container {
+        left: 24%;
+    }
+}
+
+@media screen and (max-width: 1500px) {
+    .content-container {
+        left: 23%;
+    }
+}
 
 @media screen and (max-width: 1440px) {
     .footer_img {
-        width: 150px;
-        height: 150px;
+        width: 180px;
+        height: 180px;
+    }
+
+    .content-container {
+        left: 22%;
     }
 }
 
 @media screen and (max-width: 1370px) {
     .cardList {
         width: 90%;
+    }
+
+    .content-container {
+        left: 20%;
     }
 }
 
@@ -399,6 +437,8 @@ body {
 
     .footer_img {
         grid-area: Logo;
+        width: 200px;
+        height: 200px;
     }
 
     .footer_socialNetworks {
@@ -429,6 +469,12 @@ body {
 
     .footer_tittle-icons {
         font-size: 1.2rem;
+    }
+}
+
+@media screen and (max-width: 1250px) {
+    .content-container {
+        left: 18%;
     }
 }
 
@@ -472,7 +518,7 @@ body {
 
 @media screen and (max-width: 828px) {
     .footer_tittle {
-        font-size: 1.2rem;
+        font-size: 1.1rem;
     }
 
     .footer_subtittle {
@@ -553,15 +599,15 @@ body {
     }
 
     .footer_tittle {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     .footer_subtittle {
-        font-size: 1.4rem;
+        font-size: 1.1rem;
     }
 
     .footer_copyRight {
-        font-size: .9rem;
+        font-size: .7rem;
     }
 
     .footer_socialNetworks {
