@@ -17,6 +17,13 @@ body {
         "footer";
 }
 
+.navbar {
+    background: rgb(56, 176, 193);
+    background: linear-gradient(90deg, rgba(56, 176, 193, 0.39) 7.01%, rgba(3, 147, 200, .86) 100%);
+    min-height: 6rem;
+
+}
+
 .header_container {
     grid-area: navBar;
     min-height: 4rem;
@@ -25,7 +32,9 @@ body {
 .main_container {
     grid-area: main;
     margin-bottom: 3rem;
+    overflow: visible;
 }
+
 
 /* HEADER */
 
@@ -35,8 +44,9 @@ body {
 }
 
 .logo_brand {
-    margin-left: 1.2rem;
-
+    position: absolute;
+    left: 1.2rem;
+    top: 0rem;
     width: 100px;
     height: 100px;
     transition: .25s all ease-in-out;
@@ -47,32 +57,35 @@ body {
 }
 
 .navbar-nav {
-    justify-content: center;
+    width: 55%;
+    min-width: 650x;
+    justify-content: space-between;
     align-items: center;
+    gap: 1.3rem;
+}
+
+.whiteFont {
+    color: white;
 }
 
 .nav-link {
-    margin: 1.3rem;
+    color: white !important;
     font-family: 'Poppins', sans-serif;
     border-radius: 5px;
-    background-color: rgb(255, 255, 255);
+    font-weight: 400;
     filter: drop-shadow(2px 5px 8px rgba(0, 0, 0, 0.134));
     transition: 1.8s all ease-in-out;
-}
-
-.nav-link:hover {
-    filter: drop-shadow(2px 5px 10px rgba(0, 0, 0, 0.232));
 }
 
 .btn_donate {
     font-family: 'Poppins', sans-serif;
     width: 8rem;
-    display: flex;
-    justify-content: center;
-    margin: auto 0 auto 1.5rem;
+    text-align: center;
+    margin: auto 0 auto;
     border-radius: 25px;
-    background-color: rgba(0, 0, 0, 0.438);
-    color: white;
+    background-color: #F9FFFE;
+    color: #007C71;
+    font-weight: 1000;
     text-decoration: none;
     padding: .5rem;
     transition: .25s all ease-in-out;
@@ -85,16 +98,32 @@ body {
     box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.346);
 }
 
+.btn_donate-statick {
+    font-family: 'Poppins', sans-serif;
+    width: 8rem;
+    display: flex;
+    justify-content: center;
+    margin: auto 0 auto 1.5rem;
+    border-radius: 25px;
+    background-color: #F9FFFE;
+    color: #007C71;
+    font-weight: 1000;
+    text-decoration: none;
+    padding: .5rem;
+    text-align: center;
+    transition: .25s all ease-in-out;
+    box-shadow: 2px 5px 18px rgba(0, 0, 0, 0.134);
+}
+
 /* FOOTER */
+
+
 
 .footer_container {
     grid-area: footer;
-}
-
-.footer_container {
     height: auto;
-    background: rgb(233, 233, 233);
-    background: linear-gradient(0deg, rgba(233, 233, 233, 1) 10%, #38b1c1 100%);
+    background: rgb(56, 176, 193);
+    background: linear-gradient(90deg, rgba(56, 176, 193, 0.39) 7.01%, rgba(3, 147, 200, .86) 100%);
 }
 
 .footer {
@@ -203,19 +232,39 @@ body {
 /* CARD */
 
 .cardList {
-    width: 80%;
-    display: flex;
-    margin: auto;
-    justify-content: center;
-    flex-wrap: wrap;
-    overflow: hidden;
+    margin: 0 auto 10rem;
+    position: relative;
+    z-index: 1;
+    width: 55%;
+    min-width: 650px;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto;
+    gap: 3rem 3rem;
+    grid-template-areas:
+        "history proyect"
+        "gallery gallery";
+}
+
+.gallery {
+    grid-area: gallery;
+}
+
+.history {
+    grid-area: history;
+}
+
+.proyect {
+    grid-area: proyect;
 }
 
 .card_container {
-    margin: 2rem;
-    width: 300px;
+    border-radius: 24px;
+    margin: auto;
+    width: 100%;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.144);
+    background-color: rgb(193, 193, 193);
     overflow: hidden;
     transition: all .25s ease-in-out;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.173);
@@ -225,24 +274,12 @@ body {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.379);
 }
 
-.card_text {
-    width: 250px;
-    padding: 11rem 20rem 4rem 20rem;
-    text-align: center;
-    position: relative;
-    right: 0;
-    transition: .25s all ease-in-out;
-}
-
-.card_text:hover {
-    right: 20rem;
-}
-
 .card_container-images {
-    margin: 2rem;
-    width: 1028px;
+    border-radius: 24px;
+    margin: auto;
+    width: 100%;
     height: 300px;
-    background-color: rgba(0, 0, 0, 0.144);
+    background-color: rgb(193, 193, 193);
     overflow: hidden;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.173);
     transition: all .25s ease-in-out;
@@ -252,21 +289,23 @@ body {
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.379);
 }
 
-.card_text-images {
-    width: 250px;
-    padding: 20rem 59.3rem 2rem 5rem;
-    text-align: center;
+.card_text {
     position: relative;
     bottom: 0;
+    width: 100%;
+    padding: 22rem 0rem 6rem 0rem;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
     transition: .25s all ease-in-out;
 }
 
-.card_text-images:hover {
-    bottom: 10rem;
+.card_text:hover {
+    bottom: 9rem;
 }
 
 .card_text-tittle {
-    margin-bottom: .3rem;
+    margin: 0 auto;
     width: 300px;
     font-size: 2rem;
     font-family: 'Indie Flower', cursive;
@@ -279,12 +318,34 @@ body {
     font-family: 'Indie Flower', cursive;
 }
 
-/* CAROUSEL */
+
+.card_img {
+    position: absolute;
+    z-index: -2;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+/* MAIN-HEADER */
 .carousell {
     width: 100%;
     overflow: hidden;
     margin-bottom: 5rem;
     position: relative;
+}
+
+.main_header-page {
+    width: 100%;
+    height: 40vh;
+    overflow: hidden;
+    margin-bottom: 5rem;
+    position: relative;
+}
+
+.content--img {
+    width: 100vh;
+    height: max-content;
 }
 
 .content-container {
@@ -294,70 +355,69 @@ body {
     z-index: 10;
 }
 
-.content-container {
-    left: 28%;
+.context_tittle-page {
+    position: absolute;
+    top: 30%;
+    text-align: center;
+    z-index: 10;
+    color: #095F58;
+    width: 100%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 3rem;
+}
+
+.context_tittle {
+    color: white;
+    width: 90%;
+    filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
+
+    font-family: 'Indie Flower', cursive;
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+}
+
+.context_text {
+    color: white;
+    width: 70%;
+    font-family: 'Indie Flower', cursive;
+    font-size: 1.5rem;
+    margin-bottom: 2.5rem;
+}
+
+.main_header-img {
+    background-color: rgba(255, 0, 0, 0.388);
+    object-fit: cover;
+    width: 100%;
+    height: 85vh;
 }
 
 .wave_container {
     position: absolute;
     width: 100%;
     bottom: -5rem;
-    z-index: 9;
+    z-index: 2;
     overflow: hidden;
 }
 
-.Imagen1 {
-    background-color: rgba(255, 0, 0, 0.388);
+.header_filter {
+    position: absolute;
+    z-index: 1;
+    background-color: rgba(202, 246, 249, 0.67);
     width: 100%;
-    height: 85vh;
-}
-
-.Imagen2 {
-    background-color: rgba(255, 247, 0, 0.388);
-    width: 100%;
-    height: 85vh;
-}
-
-.Imagen3 {
-    background-color: rgba(38, 255, 0, 0.388);
-    width: 100%;
-    height: 85vh;
-}
-
-.Imagen4 {
-    background-color: rgba(0, 255, 217, 0.388);
-    width: 100%;
-    height: 85vh;
-}
-
-.Imagen5 {
-    background-color: rgba(0, 30, 255, 0.388);
-    width: 100%;
-    height: 85vh;
-}
-
-.Imagen6 {
-    background-color: rgba(255, 0, 242, 0.388);
-    width: 100%;
-    height: 85vh;
-}
-
-.context_text {
-    width: 90%;
-    font-family: 'Indie Flower', cursive;
-    font-size: 1.6rem;
-    margin-bottom: 2.5rem;
-}
-
-.context_text {
-    width: 90%;
+    height: 100%;
 }
 
 .btn_donate-large {
-    font-size: 1.7rem;
-    padding: .2rem 1.5rem .4rem;
-    border-radius: 22px;
+    font-family: 'Poppins';
+    font-weight: 700;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.77);
+    font-family: 'Poppins', sans-serif;
+    font-size: 1.25rem;
+    padding: .8rem 3rem .8rem;
+    border-radius: 30px;
     border: 0;
+    background-color: #0393C8;
     box-shadow: 2px 5px 10px rgba(0, 0, 0, 0.403);
     transition: all .1s ease-in-out;
 }
@@ -365,6 +425,252 @@ body {
 .btn_donate-large:hover {
     box-shadow: 8px 12px 15px rgba(0, 0, 0, 0.446);
 }
+
+/* SUPPORT */
+.support {
+    margin: 5rem auto 5rem;
+    width: 55%;
+    min-width: 650px;
+}
+
+.support_card {
+    padding: 2rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.73);
+    box-shadow: 5px 8px 15px rgba(0, 0, 0, 0.412);
+    min-width: 250px;
+}
+
+.support_tittle {
+    margin: 0 auto 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    padding: .8rem 2rem;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.73);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.412);
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 45px;
+    text-align: center;
+    color: #38B0C1;
+}
+
+.support_tittle-cards {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 1.2rem;
+    line-height: 30px;
+    text-align: center;
+    color: #0393C8;
+}
+
+.support_item-cards {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 18px;
+    color: black;
+}
+
+.support_container {
+    width: 100%;
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-auto-columns: 1fr;
+    gap: 1rem 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "voluntariado apoyoEconomico"
+        "apoyoIntelectual apoyoEconomico";
+}
+
+.voluntariado {
+    grid-area: voluntariado;
+}
+
+.apoyoIntelectual {
+    grid-area: apoyoIntelectual;
+}
+
+.apoyoEconomico {
+    grid-area: apoyoEconomico;
+}
+
+.mercadoPago_container {
+    margin: 1rem 0 0;
+    align-items: flex-start;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "qr cbu";
+}
+
+.qr {
+    grid-area: qr;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cbu {
+    grid-area: cbu;
+}
+
+.mP_icon {
+    width: 12rem;
+}
+
+.qr_icon {
+    margin: 1rem;
+    width: 11rem;
+}
+
+.cbu_tittle {
+    color: #0393C8;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 18px;
+    margin-bottom: 1.8rem;
+}
+
+.cbu_type {
+    color: #0393C8;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .9rem;
+    line-height: 18px;
+}
+
+.cbu_description {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: .9rem;
+    line-height: 18px;
+    padding-left: .5rem;
+    color: black;
+}
+
+.b {
+    color: black;
+}
+
+.b:hover {
+    color: black;
+}
+
+.tittle_icon {
+    margin-left: .4rem;
+    margin-bottom: .2rem;
+}
+
+/*CONTACTO*/
+
+.user_contact {
+    padding-top: 5rem;
+    margin-top: -5rem;
+}
+
+.contact_content {
+    width: 60%;
+    margin: auto;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #095F58;
+}
+
+.contact-container {
+    position: absolute;
+    bottom: 50%;
+    margin: auto;
+    z-index: 10;
+}
+
+.Imagen1_contacto {
+    background-color: rgba(227, 29, 29, 0.388);
+    object-fit: cover;
+    width: 100%;
+    height: 85vh;
+}
+
+.contact_icon {
+    font-size: 2rem;
+    margin: .5rem .9rem;
+    color: rgba(0, 0, 0, 0.787);
+    transition: .2s all ease-in-out;
+    color: #38B0C1;
+}
+
+.contact_content-container {
+    margin: 10rem 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 0px 0px;
+    grid-template-areas:
+        "logo social";
+}
+
+.logo {
+    margin: auto;
+    grid-area: logo;
+}
+
+.contact_content-icons {
+    grid-area: social;
+}
+
+.contact_content-icons {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact_logo-img {
+    width: 300px;
+    height: 300px;
+}
+
+.contact_icon-description {
+    font-size: 1.2rem;
+    color: black;
+    margin-bottom: .3rem;
+}
+
+.band {
+    position: absolute;
+    top: 65%;
+    width: 100%;
+    height: 85%;
+    z-index: -2;
+}
+
+.contact_social {
+    margin-bottom: 10rem;
+}
+
 
 @media screen and (max-width: 1700px) {
     .content-container {
@@ -375,6 +681,8 @@ body {
         width: 80%;
     }
 }
+
+@media screen and (max-width: 1670px) {}
 
 @media screen and (max-width: 1600px) {
     .content-container {
@@ -407,7 +715,7 @@ body {
 
 @media screen and (max-width: 1370px) {
     .cardList {
-        width: 90%;
+        width: 55%;
     }
 
     .content-container {
@@ -417,7 +725,7 @@ body {
 
 @media screen and (max-width: 1364px) {
     .card_container-images {
-        width: 300px;
+        width: 100%;
     }
 
     .card_text-images {
@@ -433,8 +741,50 @@ body {
         bottom: 25%;
     }
 
+
+    .support_container {
+        width: 100%;
+        height: min-content;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto auto;
+        grid-auto-columns: 1fr;
+        gap: 1rem;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "apoyoEconomico"
+            "voluntariado"
+            "apoyoIntelectual";
+    }
+
+    .voluntariado {
+        grid-area: voluntariado;
+    }
+
+    .apoyoIntelectual {
+        grid-area: apoyoIntelectual;
+    }
+
+    .apoyoEconomico {
+        grid-area: apoyoEconomico;
+    }
+
     .cardList {
-        width: 80%;
+        width: 55%;
+        min-width: none;
+    }
+
+    .support {
+        width: 55%;
+        min-width: none;
+    }
+
+    .support_card {
+        width: 100%;
+    }
+
+    .support_container {
+        justify-content: center;
     }
 }
 
@@ -475,7 +825,7 @@ body {
         margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
+        justify-content: cennter;
     }
 
     .footer_tittle {
@@ -493,24 +843,74 @@ body {
     }
 }
 
-@media screen and (max-width: 1200px) {
-    .nav-link {
-        filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0.134));
+@media screen and (min-width: 1198px) {
+    .none {
+        display: none;
     }
 
-    .nav-link:hover {
-        width: auto;
-        display: flex;
-        justify-content: center;
-        border-radius: 25px;
-        background-color: rgba(255, 255, 255, 0.404);
-        text-decoration: none;
-        padding: .5rem;
-        box-shadow: 2px 5px 18px rgba(0, 0, 0, 0.134);
+    .notNone {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 1199px) {
+    .nav-link {
+        color: #0393C8 !important;
+        filter: drop-shadow(0 0 0 rgba(0, 0, 0, 0.134));
     }
 
     .btn_donate {
         margin: 1rem 0 2rem 0;
+    }
+
+    .btn_donate-statick {
+        margin: auto 6rem auto 0;
+    }
+
+    .navbar {
+        background: linear-gradient(189.47deg, rgba(56, 176, 193, 0.39) 7.15%, rgba(217, 217, 217, 0) 129.93%);
+    }
+
+    .none {
+        display: block;
+        position: absolute;
+        right: 2rem;
+        top: 1.8rem;
+    }
+
+    .item_margin-top {
+        margin-top: 6rem;
+    }
+
+    .item_margin-bottom {
+        margin-bottom: 2rem;
+    }
+
+    .notNone {
+        display: none;
+    }
+
+    .navbar-toggler {
+        position: absolute;
+        right: 2rem;
+        top: 1.8rem;
+
+    }
+
+    .navbar-compact {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .cardList {
+        width: 55%;
+        min-width: none;
+    }
+
+    .support {
+        width: 55%;
+        min-width: none;
     }
 }
 
@@ -541,7 +941,7 @@ body {
     }
 
     .content-container {
-        bottom: 15%;
+        top: 25%;
     }
 
     .wave_container {
@@ -552,6 +952,41 @@ body {
 @media screen and (max-width: 790px) {
     .wave_container {
         bottom: -.5rem;
+    }
+
+    .mercadoPago_container {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "qr"
+            "cbu";
+    }
+
+    .qr {
+        grid-area: qr;
+    }
+
+    .cbu {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        grid-area: cbu;
+        margin-bottom: 1.5rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .main_container {
+        margin-bottom: 0rem;
+    }
+
+    .support_tittle {
+        font-size: 22px;
+        line-height: 31px;
     }
 }
 
@@ -609,9 +1044,6 @@ body {
         grid-area: quieroDonar;
     }
 
-    .footer_socialNetworks {
-        grid-area: SocialNetworks;
-    }
 
     .footer_tittle {
         font-size: 1.2rem;
@@ -620,12 +1052,13 @@ body {
     .footer_subtittle {
         font-size: 1.1rem;
     }
-
+    
     .footer_copyRight {
         font-size: .7rem;
     }
-
+    
     .footer_socialNetworks {
+        grid-area: SocialNetworks;
         margin: 3.8rem auto -2rem;
     }
 
@@ -638,16 +1071,12 @@ body {
         margin-top: 2rem;
         display: flex;
         flex-wrap: wrap;
-        justify-content: space-evenly;
     }
 
     .footer_tittle {
         margin: 2rem 3rem;
     }
 
-    .card_container {
-        margin: 2rem 0;
-    }
 }
 
 @media screen and (max-width: 464px) {
@@ -664,30 +1093,56 @@ body {
         width: 75%;
     }
 
-    .card_container {
-        margin: 2rem 0;
+}
+
+@media screen and (max-width: 425px) {
+    .qr {
+        display: none;
     }
 
-    .card_container-images {
-        margin: 2rem 0;
+    .numberAcc {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .main_container {
+        margin-bottom: -2rem;
+    }
+
+    .logo_brand {
+        width: 80px;
+        height: 80px;
+    }
+
+    .navbar-toggler {
+        right: 1.5rem;
+        top: 29px;
+    }
+
+    .logo_brand {
+        margin-left: 0rem;
+    }
+
+    .btn_donate-statick {
+        margin: auto 5.5rem auto 0;
     }
 }
 
 @media screen and (max-width: 376px) {
     .cardList {
-        width: 100%;
+        width: 55%;
     }
 
     .card_container {
-        width: 250px;
-        height: 250px;
+        width: 100%;
     }
 
     .card_container-images {
-        width: 250px;
-        height: 250px;
-    }
+        width: 100%;
 
+    }
 
     .card_text-tittle {
         font-size: 1.6rem;
@@ -699,11 +1154,11 @@ body {
         width: 230px;
     }
 
-    .card_text {
-        padding: 7rem 20rem 4rem 20.5rem;
-    }
-
     .card_text-images {
         padding: 17rem 59.3rem 2rem .8rem;
+    }
+
+    .main_container {
+        margin-bottom: -3rem;
     }
 }

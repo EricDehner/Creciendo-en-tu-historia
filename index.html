@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Creciendo en tu historia</title>
+    <title>Creciendo En Tu Historia</title>
     <!-- Vinculacion CSS -->
     <link rel="stylesheet" href="./css/style.css">
     <!-- CDN FontAwesome-->
@@ -19,14 +19,17 @@
         integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
     <!-- CDN Aos -->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <!-- Favicon -->
+    <link rel="icon" href="../images/logo/CreciendoEnTuHistoria.ico">
 </head>
 
 <body>
     <header class="header_container">
         <nav class="navbar navbar-expand-xl bg-light">
             <div class="container-fluid">
-                <div>
-                    <a href="#"><img src="./images/logo/logo.png" alt="Logo" class="logo_brand"></a>
+                <div class="d-flex navbar-compact">
+                    <a href="./index.html"><img src="./images/logo/logo.png" alt="Logo" class="logo_brand"></a>
+                    <a class="btn_donate-statick none" href="./pages/donaciones.html">DONAR</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -34,48 +37,37 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse navbar_container" id="navbarNavAltMarkup">
-                    <div class="navbar-nav ">
-                        <a class="nav-link" href="#">NOSOTROS</a>
-                        <a class="nav-link" href="#">PROYECTO 2023</a>
-                        <a class="nav-link" href="#">NUESTRA HISTORIA</a>
-                        <a class="nav-link" href="#">VOLUNTARIADO</a>
-                        <a class="nav-link" href="#">CONTACTO</a>
-                        <a class="btn_donate" href="#">DONAR</a>
+                    <div class="navbar-nav">
+                        <a class="nav-link item_margin-top" href="./pages/nuestraHistoria.html">NUESTRA
+                            HISTORIA</a>
+                        <a class="nav-link" href="./pages/donaciones.html">CÓMO AYUDO</a>
+                        <a class="nav-link" href="./pages/nuestroProyecto.html">NUESTRO
+                            PROYECTO</a>
+                        <a class="nav-link" href="https://www.instagram.com/creciendoentuhistoria/?hl=es-la"
+                            target="_blank">NOVEDADES</a>
+                        <a class="nav-link item_margin-bottom" href="./pages/contacto.html">CONTACTO</a>
+                        <a class="btn_donate notNone" href="./pages/donaciones.html">DONAR</a>
                     </div>
                 </div>
             </div>
         </nav>
     </header>
     <main class="main_container">
+        <div>
+            <img class="band" src="../images/band.png">
+        </div>
         <article class="carousell">
-            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="" class="d-block w-100 Imagen1" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block w-100 Imagen2" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block w-100 Imagen3" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block w-100 Imagen4" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block w-100 Imagen5" alt="">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="" class="d-block w-100 Imagen6" alt="">
-                    </div>
-                </div>
-            </div>
-            <div class="content--img">
+            <img src="./images/index/IMG_4044.jfif" class="d-block w-100 main_header-img alt=">
+            <div class=" content--img">
                 <div class="content-container">
-                    <p class="context_text">Somos una organización que acompaña a NNyA en situación de calle y consumo problemático.<br>
-                        Generamos nuevas oportunidades de crecimiento integral.</p>
-                    <button class="btn_donate-large" data-aos-once="true" data-aos-delay="150" data-aos-duration="500"
-                        data-aos="zoom-in-up">DONÁ AHORA</button>
+                    <h1 class="context_tittle">CRECIENDO EN TU HISTORIA</h1>
+                    <p class="context_text">Somos una asociación que trabaja con niños, niñas y adolecentes en
+                        situación
+                        de calle y con consumo que buscan generarar un cambio en sus vidas.</p>
+                    <a href="./pages/donaciones.html">
+                        <button class="btn_donate-large" data-aos-once="true" data-aos-delay="150"
+                            data-aos-duration="500" data-aos="zoom-in-up">DONAR AHORA</button>
+                    </a>
                 </div>
                 <div class="wave_container">
                     <div class="wave_position">
@@ -89,47 +81,98 @@
             </div>
         </article>
         <article class="cardList">
-            <div class="card_container" data-aos-delay="50" data-aos-duration="1500" data-aos-once="true"
-                data-aos="fade-right">
-                <div class="card_img">
-                    <!-- <img src="" alt="" class="card_img"> -->
+            <div class="card_container history" data-aos-delay="50" data-aos-duration="1500" data-aos-once="true"
+                data-aos="fade-down-right">
+                <div>
+                    <img src="./images/index/historia.jfif" alt="Nuestra historia" class="card_img">
                 </div>
                 <div class="card_text">
-                    <h2 class="card_text-tittle">Nosotros</h2>
-                    <p class="card_text-content">Te contamos sobre nuestra historia.</p>
+                    <h2 class="card_text-tittle">Nuestra Historia</h2>
                 </div>
             </div>
-            <div class="card_container" data-aos-delay="50" data-aos-duration="1000" data-aos-once="true"
-                data-aos="fade-down">
-                <div class="card_img">
-                    <!-- <img src="" alt="" class="card_img"> -->
+            <div class="card_container proyect" data-aos-delay="50" data-aos-duration="1500" data-aos-once="true"
+                data-aos="fade-down-left">
+                <div>
+                    <img src="./images/index/proyecto.jpg" alt="Nuestros proyectos" class="card_img">
                 </div>
                 <div class="card_text">
                     <h2 class="card_text-tittle">Nuestro Proyecto</h2>
-                    <p class="card_text-content">Te contamos sobre nuestro proyecto.</p>
                 </div>
             </div>
-            <div class="card_container" data-aos-delay="50" data-aos-duration="1000" data-aos-once="true"
+            <div class="card_container-images gallery" data-aos-delay="50" data-aos-duration="1500" data-aos-once="true"
                 data-aos="fade-up">
-                <div class="card_img">
-                    <!-- <img src="" alt="" class="card_img"> -->
-                </div>
-                <div class="card_text">
-                    <h2 class="card_text-tittle">Lorem</h2>
-                    <p class="card_text-content">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
-            </div>
-            <div class="card_container-images" data-aos-delay="50" data-aos-duration="1000" data-aos-once="true"
-                data-aos="fade-up-left">
-                <div class="card_img">
-                    <!-- <img src="" alt="" class="card_img"> -->
-                </div>
-                <div class="card_text-images">
-                    <h2 class="card_text-tittle">Galeria de fotos</h2>
-                    <p class="card_text-content">Lorem ipsum dolor sit amet consectetur adipisicing.</p>
-                </div>
+                <a href="./pages/galeria.html" class="decoration">
+                    <img src="./images/index/galeria.jpg" alt="Galeria de fotos" class="card_img">
+                    <div class="card_text">
+                        <h2 class="card_text-tittle">Galería de fotos</h2>
+                    </div>
+                </a>
             </div>
         </article>
+        <article class="support">
+            <h2 class="support_tittle">AYUDA A CRECIENDO EN TU HISTORIA</h2>
+            <div class="support_container">
+                <div class="voluntariado support_card">
+                    <h3 class="support_tittle-cards">VOLUNTARIADO <img class="tittle_icon"
+                            src="./images/supportIcons/hand.svg"></h3>
+                    <p class="support_item-cards">• Actividades recreativas: Acompañar alguna de las actividades que se
+                        realicen.</p>
+                    <p class="support_item-cards">• Apoyo escolar: Acompañamiento educativo.</p>
+                    <p class="support_item-cards">• Dictado de talleres: ¿Querrías transmitir algún conocimiento en
+                        alguna área de tu expertis?</p>
+                </div>
+                <div class="apoyoIntelectual support_card">
+                    <h3 class="support_tittle-cards">APOYO INTELECTUAL <img class="tittle_icon"
+                            src="./images/supportIcons/light.svg"></h3>
+                    <p class="support_item-cards">• Con una idea: ¿Se te ocurre alguna idea que nos pueda ayudar a
+                        seguir creciendo?</p>
+                    <p class="support_item-cards">• Con un contacto: ¿Conocés a alguien que nos pueda potenciar en
+                        nuestra misión?</p>
+                    <p class="support_item-cards">• ¡Con cualquier otra cosa! Tu ayuda es siempre bienvenida, <a
+                            class="b" href="./pages/contacto.html#contacto"><b>contactanos</b></a>.</p>
+                </div>
+                <div class="apoyoEconomico support_card">
+                    <h3 class="support_tittle-cards">APOYO ECONOMICO <img class="tittle_icon"
+                            src="./images/supportIcons/hand.svg"></h3>
+                    <p class="support_item-cards">• Podés hacer donaciones mensuales o únicas a través de MercadoPago o
+                        por transferencia bancaria.
+                    </p>
+                    <div class="mercadoPago_container">
+                        <div class="qr">
+                            <img class="mP_icon" src="./images/support/mercadoPago.png" alt="Mercado pago">
+                            <img class="qr_icon" src="./images/support/qr.png" alt="qr">
+                            <p class="support_item-cards">Escaneá directamente el QR.</p>
+                        </div>
+                        <div class="cbu">
+                            <h3 class="cbu_tittle">Transferencia bancaria</h3>
+                            <div>
+                                <div class="d-flex numberAcc">
+                                    <p class="cbu_type">Banco:</p>
+                                    <p class="cbu_description">Credicoop</p>
+                                </div>
+                                <div class="d-flex numberAcc">
+                                    <p class="cbu_type">Nro. de Cuenta:</p>
+                                    <p class="cbu_description">CC$ 191001063246/2</p>
+                                </div>
+                                <div class="d-flex numberAcc">
+                                    <p class="cbu_type ">Alias:</p>
+                                    <p class="cbu_description">creciendoac</p>
+                                </div>
+                                <div class="d-flex ">
+                                    <div class="d-flex numberAcc">
+                                        <p class="cbu_type">CBU:</p>
+                                        <p class="cbu_description">1910001855000106324628</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <p class="support_item-cards">• Podes ayudarnos también donando calzado, ropa deportiva,
+                                muebles en
+                                buen estado. ¡<a class="b" href="./pages/contacto.html#contacto"><b>Contactanos</b></a>
+                                para coordinar!</p>
+                        </div>
+                    </div>
+        </article>
+
     </main>
     <footer class="footer_container">
         <div class="footer">
@@ -140,16 +183,15 @@
             <div class="footer_text">
                 <div class="footer_text-column conocenos">
                     <h2 class="footer_tittle">CONOCENOS</h2>
-                    <a href="#" class="footer_subtittle decoration">Quíenes somos</a>
+                    <a href="./pages/nuestraHistoria.html" class="footer_subtittle decoration">Nuestra historia</a>
                 </div>
                 <div class="footer_text-column quieroSerParte">
                     <h2 class="footer_tittle">QUIERO SER PARTE</h2>
-                    <a href="#" class="footer_subtittle decoration">Contactanos</a>
+                    <a href="./pages/contacto.html" class="footer_subtittle decoration">Contactanos</a>
                 </div>
                 <div class="footer_text-column quieroDonar">
                     <h2 class="footer_tittle">QUIERO DONAR</h2>
-                    <a href="#" class="footer_subtittle decoration">Escribinos</a>
-                    <a href="#" class="footer_subtittle decoration">Doná por Mercado Pago</a>
+                    <a href="./pages/donaciones.html" class="footer_subtittle decoration">Doná por Mercado Pago</a>
                 </div>
             </div>
             <span class="footer_stick"></span>
