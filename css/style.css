@@ -760,6 +760,28 @@ p {
     margin-bottom: 0 !important;
 }
 
+.text_video {
+    position: relative;
+    bottom: 1.5rem;
+    right: 3rem;
+    display: flex;
+    justify-content: center;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #000000;
+}
+
+.video {
+    position: absolute;
+    left: 10%;
+    width: 424px;
+}
+
 .line1 {
     position: relative;
     bottom: 8rem;
@@ -810,17 +832,28 @@ p {
 }
 
 .year19 {
-    width: 100%;
+    width: max-content;
     position: relative;
-    left: -35%;
-
+    left: 20%;
 }
 
-.year20 {}
+.year20 {
+    width: max-content;
+    position: relative;
+    left: 55%;
+}
 
-.year21 {}
+.year21 {
+    width: max-content;
+    position: relative;
+    left: 55%;
+}
 
-.year22 {}
+.year22 {
+    width: max-content;
+    position: relative;
+    left: 50%;
+}
 
 .history_tittle {
     font-family: 'Indie Flower';
@@ -840,7 +873,6 @@ p {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
 }
 
 .history_year19 {
@@ -872,14 +904,16 @@ p {
     font-size: 20px;
     line-height: 29px;
     text-align: center;
-    width: 50rem;
+    width: 100%;
     height: auto;
 }
 
 .history_text19 {
+    position: relative;
+    left: 25%;
     color: #38B0C1;
     border-radius: 30px;
-    width: max-content;
+    width: 50%;
     box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.115);
@@ -897,9 +931,11 @@ p {
 }
 
 .history_text20 {
+    position: relative;
+    left:45%;
     color: #0393C8;
     border-radius: 30px;
-    width: max-content;
+    width: 50%;
     box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.115);
@@ -917,9 +953,11 @@ p {
 }
 
 .history_text21 {
+    position: relative;
+    left: 40%;
     color: #007C71;
     border-radius: 30px;
-    width: max-content;
+    width: 50%;
     box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.115);
@@ -937,9 +975,11 @@ p {
 }
 
 .history_text22 {
+    position: relative;
+    left: 25%;
     color: #00A569;
     border-radius: 30px;
-    width: max-content;
+    width: 50%;
     box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
     background: #FFFFFF;
     border: 1px solid rgba(0, 0, 0, 0.115);
@@ -1256,9 +1296,11 @@ p {
     .support_logo {
         left: 1%;
     }
-}
 
-@media screen and (max-width: 1370px) {}
+    .video {
+        left: 8%;
+    }
+}
 
 @media screen and (max-width: 1364px) {
     .content-container {
@@ -1475,6 +1517,11 @@ p {
     }
 }
 
+@media screen and (max-width: 1024px) {
+    .video {
+        left: 5%;
+    }
+}
 @media screen and (max-width: 900px) {
     .contact_content {
         width: 80%;
@@ -1484,9 +1531,41 @@ p {
         bottom: -1.2rem;
     }
 
-    .history_text {
+    .video{
+        display: none;
+    }
+
+    .year19 {
+        left: 20%;
+    }
+    
+    .year20 {
+        left: 55%;
+    }
+    
+    .year21 {
+        left: 55%;
+    }
+    
+    .year22 {
+        left: 50%;
+    }
+
+    .history_text19 {
+        left: 10%;
         width: 80%;
-        height: auto;
+    }
+    .history_text20 {
+        left: 10%;
+        width: 80%;
+    }
+    .history_text21 {
+        left: 10%;
+        width: 80%;
+    }
+    .history_text22 {
+        left: 10%;
+        width: 80%;
     }
 }
 
