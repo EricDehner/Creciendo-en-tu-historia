@@ -18,8 +18,7 @@ body {
 }
 
 .navbar {
-    background: rgb(56, 176, 193);
-    background: linear-gradient(90deg, rgba(56, 176, 193, 0.39) 7.01%, rgba(3, 147, 200, .86) 100%);
+    background: linear-gradient(89.89deg, #87ECFA -14.89%, #02A4DF 102.52%);
     min-height: 6rem;
 
 }
@@ -121,8 +120,7 @@ body {
 .footer_container {
     grid-area: footer;
     height: auto;
-    background: rgb(56, 176, 193);
-    background: linear-gradient(90deg, rgba(56, 176, 193, 0.39) 7.01%, rgba(3, 147, 200, .86) 100%);
+    background: linear-gradient(92.98deg, #87ECFA 7.01%, #02A4DF 100%);
 }
 
 .footer {
@@ -350,13 +348,20 @@ body {
 
 .content--img {
     width: 100%;
+    display: flex;
+    justify-content: center;
     height: max-content;
 }
 
 .content-container {
+    width: 55%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    min-width: 1010px;
     position: absolute;
     bottom: 35%;
-    left: 28%;
     z-index: 10;
 }
 
@@ -368,32 +373,30 @@ body {
     color: #095F58;
     width: 100%;
     font-family: 'Indie Flower', cursive;
-    font-size: 3rem;
+    font-size: 50px;
 }
 
 .context_tittle {
     color: white;
-    width: 90%;
+    width: 75%;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
-
     font-family: 'Indie Flower', cursive;
-    font-size: 2rem;
-    margin-bottom: 2.5rem;
+    font-size: 50px;
+    margin-bottom: 1rem;
 }
 
 .context_text {
     color: white;
-    width: 70%;
+    width: 75%;
     font-family: 'Indie Flower', cursive;
-    font-size: 1.5rem;
-    margin-bottom: 2.5rem;
+    font-size: 23px;
+    margin-bottom: 1rem !important;
 }
 
 .main_header-img {
-    background-color: rgba(255, 0, 0, 0.388);
     object-fit: cover;
     width: 100%;
-    height: 85vh;
+    height: 448px;
 }
 
 .wave_container {
@@ -447,7 +450,6 @@ body {
     background-image: url(../images/support/donacion.png);
     background-repeat: no-repeat;
     background-size: cover;
-    background-image: center;
 }
 
 .support {
@@ -753,11 +755,446 @@ body {
     object-fit: cover;
 }
 
-@media screen and (max-width: 1700px) {
-    .content-container {
-        left: 26%;
-    }
+/* NUESTRA HISTORIA */
+p {
+    margin-bottom: 0 !important;
+}
 
+.line1 {
+    position: relative;
+    bottom: 8rem;
+    left: 8.5rem;
+    margin-bottom: -9rem;
+}
+
+.line2 {
+    position: relative;
+    top: .5rem;
+    right: 8rem;
+    margin-bottom: -4.5rem;
+}
+
+.line3 {
+    position: relative;
+    bottom: 6rem;
+    left: 8.5rem;
+    margin-bottom: -6rem;
+}
+
+.line4 {
+    position: relative;
+    top: .5rem;
+    left: 4rem;
+    margin-bottom: -3rem;
+}
+
+.line5 {
+    position: relative;
+    bottom: 3rem;
+    left: 4rem;
+    margin-bottom: -2rem;
+}
+
+.line6 {
+    position: relative;
+    top: .5rem;
+    left: 3.5rem;
+    margin-bottom: -3rem;
+}
+
+.line7 {
+    position: relative;
+    bottom: 3.5rem;
+    left: 1rem;
+    margin-bottom: -2.5rem;
+}
+
+.year19 {
+    width: 100%;
+    position: relative;
+    left: -35%;
+
+}
+
+.year20 {}
+
+.year21 {}
+
+.year22 {}
+
+.history_tittle {
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 2rem;
+    line-height: 58px;
+    text-align: center;
+    width: 45rem;
+    margin: auto;
+    text-align: center;
+}
+
+.history_line {
+    width: 85%;
+    margin: 5rem auto 5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.history_year19 {
+    background: #38B0C1;
+    border-radius: 30px;
+    width: 8rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 0 0 4rem;
+}
+
+.history_year {
+    color: white;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 33px;
+    margin: 0;
+}
+
+.history_text {
+    padding: 2rem 2rem;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    width: 50rem;
+    height: auto;
+}
+
+.history_text19 {
+    color: #38B0C1;
+    border-radius: 30px;
+    width: max-content;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.115);
+}
+
+.history_year20 {
+    background: #0393C8;
+    border-radius: 30px;
+    width: 8rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 4rem 0;
+}
+
+.history_text20 {
+    color: #0393C8;
+    border-radius: 30px;
+    width: max-content;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.115);
+}
+
+.history_year21 {
+    background: #007C71;
+    border-radius: 30px;
+    width: 8rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 4rem 0;
+}
+
+.history_text21 {
+    color: #007C71;
+    border-radius: 30px;
+    width: max-content;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.115);
+}
+
+.history_year22 {
+    background: #00A569;
+    border-radius: 30px;
+    width: 8rem;
+    height: 2.5rem;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    margin: 4rem 0;
+}
+
+.history_text22 {
+    color: #00A569;
+    border-radius: 30px;
+    width: max-content;
+    box-shadow: 4px 8px 8px rgba(0, 0, 0, 0.2);
+    background: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.115);
+}
+
+/* NUESTRO PROYECTO */
+.nuestroProyecto {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto;
+    grid-auto-columns: 1fr;
+    gap: 0 1rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "centroDia casaConvivencial";
+}
+
+.centroDia {
+    margin: 0 1rem 5rem auto;
+    width: 745px;
+    height: 976px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    grid-area: centroDia;
+}
+
+.centroDia_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.logo_card {
+    margin: 2rem auto 0;
+}
+
+.centroDia_title {
+    margin: auto;
+    margin-top: 1rem;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: #0393C8;
+}
+
+.centroDia_subtitle {
+    margin: auto;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #0393C8;
+}
+
+.arrow1 {
+    margin: auto;
+    margin-bottom: -1rem;
+}
+
+.arrow2 {
+    margin: auto;
+}
+
+.arrow3 {
+    margin: auto;
+    position: relative;
+    right: 40%;
+    bottom: 4rem;
+}
+
+.arrow4 {
+    margin: auto;
+    position: relative;
+    left: 41%;
+}
+
+.centroDia_item1 {
+    margin: 1rem auto 0;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    background: rgba(56, 176, 193, 0.04);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    width: 691px;
+}
+
+.centroDia_item2 {
+    margin: 2rem auto 1rem !important;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #38B0C1;
+}
+
+.centroDia_item3 {
+    margin: -4.5rem auto 0;
+    padding: 1.5rem;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+    background: rgba(56, 176, 193, 0.15);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    width: 561px;
+}
+
+.centroDia_item4 {
+    margin: 0 auto 0 !important;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #38B0C1;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    width: 610px;
+    height: 86px;
+    display: flex;
+    align-items: center;
+}
+
+
+
+.casaConvivencial {
+    margin: 0 auto 5rem 1rem;
+    width: 745px;
+    height: 976px;
+    background: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    grid-area: casaConvivencial;
+}
+
+.casaConvivencial_content {
+    display: flex;
+    flex-direction: column;
+}
+
+.casaConvivencial_title {
+    margin: auto;
+    margin-top: 1rem;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 44px;
+    color: #007C71;
+}
+
+.casaConvivencial_subtitle {
+    margin: auto;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+    text-align: center;
+    color: #007C71;
+}
+
+.arrow5 {
+    margin: .5rem auto .2rem;
+}
+
+.arrow6 {
+    margin: auto;
+    position: relative;
+    right: 43%;
+    bottom: 5rem;
+}
+
+.arrow7 {
+    margin: auto;
+    position: relative;
+    left: 40%;
+    bottom: .5rem;
+}
+
+.casaConvivencial_item1 {
+    margin: 1rem auto 0;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    text-align: center;
+    color: #000000;
+    background: #DEFAF2;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    width: 691px;
+}
+
+.casaConvivencial_item2 {
+    margin: 2rem auto 1rem !important;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #00A569;
+}
+
+.casaConvivencial_item3 {
+    margin: -6rem auto 0;
+    padding: 1.5rem;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 29px;
+    color: #000000;
+    background: rgba(0, 165, 105, 0.39);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    width: 584px;
+}
+
+.casaConvivencial_item4 {
+    margin: -2rem auto 0 !important;
+    font-family: 'Indie Flower';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 26px;
+    text-align: center;
+    color: #FFFFFF;
+    background: #00A569;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+    width: 538px;
+    height: 116px;
+    display: flex;
+    align-items: center;
+}
+
+@media screen and (max-width: 1700px) {
     .context_text {
         width: 80%;
     }
@@ -777,23 +1214,38 @@ body {
     }
 }
 
-@media screen and (max-width: 1600px) {
-    .content-container {
-        left: 24%;
+@media screen and (max-width: 1630px) {
+    .nuestroProyecto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: 1fr;
+        gap: 2rem 0;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "centroDia"
+            "casaConvivencial";
     }
 
+    .centroDia {
+        grid-area: centroDia;
+        margin: 0 auto 5rem;
+    }
+
+    .casaConvivencial {
+        grid-area: casaConvivencial;
+        margin: 0 auto 5rem;
+    }
+
+}
+
+@media screen and (max-width: 1600px) {
     .context_text {
         width: 70%;
     }
 }
 
-@media screen and (max-width: 1500px) {
-    .content-container {
-        left: 23%;
-    }
-
-
-}
+@media screen and (max-width: 1500px) {}
 
 @media screen and (max-width: 1440px) {
     .footer_img {
@@ -801,22 +1253,19 @@ body {
         height: 180px;
     }
 
-    .content-container {
-        left: 22%;
-    }
-
     .support_logo {
         left: 1%;
     }
 }
 
-@media screen and (max-width: 1370px) {
-    .content-container {
-        left: 20%;
-    }
-}
+@media screen and (max-width: 1370px) {}
 
 @media screen and (max-width: 1364px) {
+    .content-container {
+        width: 80%;
+        min-width: 300px;
+    }
+
     .card_container-images {
         width: 100%;
     }
@@ -947,9 +1396,6 @@ body {
 }
 
 @media screen and (max-width: 1250px) {
-    .content-container {
-        left: 18%;
-    }
 
     .support {
         width: 80%;
@@ -1030,9 +1476,17 @@ body {
 }
 
 @media screen and (max-width: 900px) {
+    .contact_content {
+        width: 80%;
+    }
 
     .wave_container {
         bottom: -1.2rem;
+    }
+
+    .history_text {
+        width: 80%;
+        height: auto;
     }
 }
 
@@ -1060,7 +1514,62 @@ body {
         bottom: -.5rem;
     }
 
+    .centroDia {
+        width: 90%;
+        height: max-content;
+    }
 
+
+    .centroDia_item1 {
+        width: 90%;
+        padding: .5rem .5rem;
+    }
+
+    .centroDia_item3 {
+        width: 75%;
+    }
+
+    .centroDia_item4 {
+        padding: .5rem .5rem;
+        width: 85%;
+        height: max-content !important;
+        margin: 0rem auto 1.5rem !important;
+    }
+
+    .casaConvivencial {
+        width: 90%;
+        height: max-content;
+    }
+
+    .casaConvivencial_item1 {
+        width: 90%;
+        padding: .5rem .5rem;
+    }
+
+    .casaConvivencial_item3 {
+        width: 75%;
+    }
+
+    .casaConvivencial_item4 {
+        width: 90%;
+        padding: .5rem .5rem;
+        height: max-content !important;
+        margin: 0rem auto 1.5rem !important;
+    }
+
+    .arrow6 {
+        margin: auto;
+        position: relative;
+        right: 38%;
+        bottom: 5rem;
+    }
+
+    .arrow7 {
+        margin: auto;
+        position: relative;
+        left: 37%;
+        top: .2rem;
+    }
 
     .numberAcc {
         display: flex;
@@ -1174,6 +1683,31 @@ body {
         grid-area: history;
     }
 
+    .contact_content-container {
+        margin: 2rem auto 4rem;
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto;
+        grid-auto-columns: 1fr;
+        gap: 0px 0px;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "logo"
+            "social";
+    }
+
+    .logo {
+        grid-area: logo;
+    }
+
+    .contact_content-icons {
+        margin: 1rem auto;
+        grid-area: social;
+    }
+
+    .contact_social {
+        margin-bottom: 5rem;
+    }
 }
 
 @media screen and (max-width: 571px) {
@@ -1253,6 +1787,15 @@ body {
         margin: 2rem 3rem;
     }
 
+    .casaConvivencial_subtitle {
+        width: 90%;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .centroDia_subtitle {
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 464px) {
@@ -1272,6 +1815,47 @@ body {
 }
 
 @media screen and (max-width: 425px) {
+
+    .cardList {
+        margin: 0 auto 4rem;
+    }
+
+    .main_header-img {
+        object-fit: cover;
+        width: 100%;
+        height: 248px;
+    }
+
+    .context_text {
+        filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
+        color: white;
+        width: 95%;
+        font-family: 'Indie Flower', cursive;
+        font-size: 18px;
+        margin-bottom: 1rem !important;
+        text-align: center;
+    }
+
+    .content-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        bottom: 2rem;
+    }
+
+    .context_tittle {
+        width: 90%;
+        font-size: 23px;
+        margin-bottom: 1rem;
+        text-align: center;
+    }
+
+    .mobile_hidden {
+        display: none;
+    }
+
     .qr {
         display: none;
     }
@@ -1305,6 +1889,19 @@ body {
 
     .content-container {
         top: 8%;
+    }
+
+    .main_header-page {
+        height: 25vh;
+    }
+
+    .context_tittle-page {
+        font-size: 2.2rem;
+        font-weight: 500;
+    }
+
+    .contact_logo-img {
+        display: none;
     }
 }
 
