@@ -786,7 +786,7 @@ p {
     position: relative;
     bottom: 8rem;
     left: 8.5rem;
-    margin-bottom: -9rem;
+    margin-bottom: -10.5rem;
 }
 
 .line2 {
@@ -883,7 +883,7 @@ p {
     display: flex;
     justify-content: center;
     justify-items: center;
-    margin: 0 0 4rem;
+    margin: 0 0 3rem;
 }
 
 .history_year {
@@ -932,7 +932,7 @@ p {
 
 .history_text20 {
     position: relative;
-    left:45%;
+    left: 45%;
     color: #0393C8;
     border-radius: 30px;
     width: 50%;
@@ -1522,6 +1522,7 @@ p {
         left: 5%;
     }
 }
+
 @media screen and (max-width: 900px) {
     .contact_content {
         width: 80%;
@@ -1531,41 +1532,68 @@ p {
         bottom: -1.2rem;
     }
 
-    .video{
+    .video {
         display: none;
     }
 
     .year19 {
         left: 20%;
     }
-    
+
     .year20 {
-        left: 55%;
+        left: 40%;
     }
-    
+
     .year21 {
-        left: 55%;
+        left: 40%;
     }
-    
+
     .year22 {
-        left: 50%;
+        left: 35%;
     }
 
     .history_text19 {
-        left: 10%;
-        width: 80%;
+        left: 0;
+        margin: auto;
+        width: 100%;
     }
+
     .history_text20 {
-        left: 10%;
-        width: 80%;
+        left: 0;
+        margin: auto;
+        width: 100%;
     }
+
     .history_text21 {
-        left: 10%;
-        width: 80%;
+        left: 0;
+        margin: auto;
+        width: 100%;
     }
+
     .history_text22 {
-        left: 10%;
+        left: 0;
+        margin: auto;
+        width: 100%;
+    }
+
+    .line1 {
+        position: relative;
+        bottom: 4.5rem;
+        left: 6.5rem;
+        margin-bottom: -10.5rem;
+        transform: rotate(30deg);
+    }
+
+    .history_tittle {
+        font-family: 'Indie Flower';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 1.5rem;
+        line-height: 30px;
+        text-align: center;
         width: 80%;
+        margin: auto;
+        text-align: center;
     }
 }
 
@@ -1875,6 +1903,32 @@ p {
     .centroDia_subtitle {
         width: 90%;
     }
+
+    .line_none{
+        display: none;
+    }
+
+    
+    .year19 {
+        margin: auto;
+        left: 0;
+    }
+    
+    .year20 {
+        margin: auto;
+        left: 0;
+    }
+    
+    .year21 {
+        margin: auto;
+        left: 0;
+    }
+    
+    .year22 {
+        margin: auto;
+        left: 0;
+    }
+
 }
 
 @media screen and (max-width: 464px) {
