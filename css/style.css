@@ -1234,6 +1234,652 @@ p {
     align-items: center;
 }
 
+/* DONACIONES */
+
+.donation {
+    width: 1128px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto 8rem;
+}
+
+.donation_header {
+    display: flex;
+    width: 100%;
+}
+
+.donation_header-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.5rem;
+    line-height: 45px;
+    color: #0393C8;
+    margin: 0 1.5rem .5rem 0;
+}
+
+.donation_header-img {
+    width: 140px;
+    height: max-content;
+    margin-top: .5rem;
+}
+
+.donation_main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 50% 50%;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "donation_main-title donation_main-title"
+        "mensual unica-vez";
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 100%;
+    height: 192px;
+}
+
+.mensual {
+    grid-area: mensual;
+    margin: auto;
+}
+
+.unica-vez {
+    grid-area: unica-vez;
+    margin: auto;
+}
+
+#mensual {
+    display: none;
+}
+
+#unicaVez {
+    display: none;
+}
+
+#cardDonation {
+    display: none;
+}
+
+
+
+.donation_main-title {
+    grid-area: donation_main-title;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0393C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.donation_main-btn {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: #000000;
+    border-radius: 14px;
+    width: 301.83px;
+    height: 43.77px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #38B0C1;
+    transition: all .15s ease-in-out;
+}
+
+.active,
+donation_main-btn:hover {
+    background-color: #38B0C1;
+    color: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.donation_footer {
+    margin-top: 3rem;
+    width: 100%;
+    height: max-content;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.donation_footer-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0393C8;
+    display: flex;
+    justify-content: center;
+    padding: 0 1rem;
+}
+
+.donation_footer-amounts {
+    width: 100%;
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.donation_footer-amounts--price {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    background: #38B0C1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+}
+
+.donation_footer-amounts--price:hover {
+    color: #FFFFFF;
+}
+
+.donation_footer-content {
+    display: flex;
+    justify-content: space-evenly;
+    height: 150px;
+    margin-bottom: 1rem;
+}
+
+.donation_footer-content--img {
+    margin-left: 4rem;
+    width: 150px;
+}
+
+.donation_footer-content--data {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-left: -10rem;
+}
+
+.donation_footer-content--data--order {
+    display: flex;
+    align-items: center;
+}
+
+.donation_footer-content--data--order--title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0393C8;
+}
+
+.donation_footer-content--data--order--content {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+    margin-left: .7rem;
+}
+
+.donation_title-margin {
+    color: #0393C8;
+    margin-left: .5rem;
+}
+
+.donation_title-margin:hover {
+    color: #0393C8;
+    margin-left: .5rem;
+}
+
+.transferDonation {
+    margin: 0 auto 8rem;
+    width: 1129px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 2rem;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "transfers donationVideo";
+}
+
+.donationVideo {
+    grid-area: donationVideo;
+}
+
+.transfers {
+    grid-area: transfers;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 100%;
+    height: auto;
+}
+
+.transfers_title {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34.5px;
+    color: #0393C8;
+    padding: 0 1.5rem;
+}
+
+.transfers_content {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0 .5rem 2rem;
+}
+
+.transfers_content-item {
+    margin: .2rem 0 .2rem .5rem;
+    display: flex;
+}
+
+.transfers_content-item--title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #0393C8;
+}
+
+.transfers_content-item--content {
+    margin: 0 0 0 .5rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    color: #000000;
+}
+
+.donationCard {
+    margin: 0 auto 5rem;
+    width: 1129px;
+    height: max-content;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.donationCard_tittle {
+    display: flex;
+    justify-content: center;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 34px;
+    color: #0393C8;
+    margin-bottom: 3rem;
+    padding-top: 2rem;
+}
+
+.donationCard_content {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "voluntariado donacion-material";
+}
+
+.voluntariado {
+    grid-area: voluntariado;
+}
+
+.donacion-material {
+    grid-area: donacion-material;
+}
+
+
+.donationCard_content-card {
+    margin: auto;
+    width: 473.03px;
+    height: 409px;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+}
+
+.donationCard_content-card--title {
+    width: 473.03px;
+    height: 44px;
+    background: linear-gradient(175.85deg, #0393C8 3.38%, #76B7D3 96.63%);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto 2rem;
+}
+
+.donationCard_content-card--text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    color: #000000;
+    margin: 1.5rem 2rem;
+}
+
+.donationMargin {
+    margin-left: 3rem;
+}
+
+.donationCard_footer {
+    margin-top: 3rem;
+    padding-bottom: 2rem;
+}
+
+.donationCard_footer-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #007C71;
+}
+
+.donationCard_footer-text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    text-align: center;
+    color: #000000;
+}
+
+.donationCard_footer-text--decoration {
+    color: #000000;
+}
+
+.donationCard_footer-text--decoration:hover {
+    color: #000000;
+}
+
+
+
+.economicSupport {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 90%;
+    height: max-content;
+    margin: 0 auto 3rem;
+}
+
+.economicSupport_title {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 70%;
+    height: max-content;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+
+.economicSupport_title-title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 18px;
+    text-align: center;
+    color: #0393C8;
+}
+
+
+.economicSupport_text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 20px;
+    color: #000000;
+    padding: 1.5rem 2rem;
+}
+
+.economicSupport_donation {
+    width: 90%;
+    height: max-content;
+    margin: 0 auto 2rem;
+}
+
+.economicSupport_donation-title {
+    display: flex;
+}
+
+.economicSupport_donation-title--text {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 18px;
+    text-align: center;
+    color: #0393C8;
+    display: flex;
+    align-items: center;
+    margin-right: 1rem;
+}
+
+.economicSupport_donation-title--img {
+    width: 120px;
+}
+
+.economicSupport_donation-main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    grid-auto-columns: 1fr;
+    gap: 0px 0px;
+    grid-auto-flow: row;
+    grid-template-areas:
+        "donation_main-title donation_main-title"
+        "mensual unica-vez";
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 100%;
+    height: max-content;
+}
+
+.economicSupport_donation-main--title {
+    grid-area: donation_main-title;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 34px;
+    color: #0393C8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1.2rem .5rem 0;
+}
+
+.economicSupport_donation-main--btn {
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: #000000;
+    border-radius: 24px;
+    width: 85%;
+    height: 43.77px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 22px;
+    text-align: center;
+    color: #38B0C1;
+    transition: all .15s ease-in-out;
+    margin: 0 auto 1rem;
+}
+
+.active,
+economicSupport_donation-main--btn:hover {
+    background-color: #38B0C1;
+    color: #FFFFFF;
+    box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+
+.economicSupport_transfers {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.2rem;
+    line-height: 20px;
+    color: #0393C8;
+    text-align: center;
+}
+
+
+.economicSupport_transfers-content {
+    display: flex;
+    flex-direction: column;
+    margin: .5rem 0 .5rem 0;
+}
+
+.economicSupport_transfers-content--item {
+    margin: .2rem 0 .2rem 0rem;
+    display: flex;
+
+}
+
+.economicSupport_transfers-content--item---title {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: #0393C8;
+}
+
+.economicSupport_transfers-content--item---content {
+    margin: 0 0 0 .5rem;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1.1rem;
+    line-height: 30px;
+    color: #000000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.intelectualSupport {
+    margin: auto;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    width: 90%;
+    height: max-content;
+    margin-bottom: 2rem;
+}
+
+.intelectualSupport_title {
+    margin: 0 auto 1rem;
+    background: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 1.1rem;
+    line-height: 18px;
+    text-align: center;
+    color: #0393C8;
+    width: 70%;
+    padding: .3rem 0;
+}
+
+.intelectualSupport_content {
+    width: 100%;
+    padding: .5rem .7rem 1rem;
+}
+
+.intelectualSupport_content_items {
+    margin-left: .5rem;
+}
+
+.intelectualSupport_content_items--item {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 15px;
+    color: #000000;
+    padding: .3rem 0;
+}
+
+.intelectualSupport_content_items--items {
+    font-family: 'Poppins';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 1rem;
+    line-height: 15px;
+    color: #000000;
+    padding: .7rem 0;
+}
+
+.intelectualSupport_decoration {
+    color: black;
+}
+
+.intelectualSupport_decoration:hover {
+    color: black;
+}
+
 @media screen and (max-width: 1700px) {
     .context_text {
         width: 80%;
@@ -1258,9 +1904,9 @@ p {
     .nuestroProyecto {
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
         grid-auto-columns: 1fr;
-        gap: 2rem 0;
+        gap: 4rem 0;
         grid-auto-flow: row;
         grid-template-areas:
             "centroDia"
@@ -1269,7 +1915,7 @@ p {
 
     .centroDia {
         grid-area: centroDia;
-        margin: 0 auto 5rem;
+        margin: 0 auto;
     }
 
     .casaConvivencial {
@@ -1496,7 +2142,6 @@ p {
         position: absolute;
         right: 2rem;
         top: 1.8rem;
-
     }
 
     .navbar-compact {
@@ -1505,6 +2150,20 @@ p {
         justify-content: space-between;
     }
 
+    .donation {
+        width: 90%;
+        margin: 0 auto 8rem;
+    }
+
+    .transferDonation {
+        margin: 0 auto 8rem;
+        width: 90%;
+    }
+
+    .donationCard {
+        margin: 0 auto 5rem;
+        width: 90%;
+    }
 }
 
 @media screen and (max-width: 1107px) {
@@ -1515,11 +2174,51 @@ p {
     .wave_container {
         bottom: -1.5rem;
     }
+
+    .donationCard_content {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        grid-auto-columns: auto;
+        gap: 2rem 0;
+        grid-auto-flow: row;
+        grid-template-areas:
+            "voluntariado"
+            "donacion-material";
+    }
+
+    .donationCard_content-card {
+        margin: auto;
+        width: 95%;
+        height: 409px;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 14px;
+    }
+
+    .transferDonation {
+        display: grid;
+        grid-auto-columns: 1fr;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr;
+        gap: 0px 0px;
+        grid-template-areas:
+            "transfers"
+            "donationVideo";
+    }
 }
 
 @media screen and (max-width: 1024px) {
     .video {
         left: 5%;
+    }
+
+    .donation_footer-content--img {
+        margin-left: 0rem;
+    }
+
+    .donation_footer-content--data {
+        margin-left: 0rem;
     }
 }
 
@@ -1614,6 +2313,10 @@ p {
         bottom: -1rem;
     }
 
+    .donation_footer-amounts--price {
+        width: 125px;
+        height: 125px;
+    }
 }
 
 @media screen and (max-width: 790px) {
@@ -1721,7 +2424,31 @@ p {
     }
 
     .band {
-        display: none;
+        /*         display: none; */
+    }
+
+    .nuestroProyecto {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto auto;
+        grid-auto-columns: 1fr;
+        gap: 4rem 0;
+        grid-auto-flow: row;
+        grid-template-areas: "centroDia"
+            "casaConvivencial";
+    }
+
+    .donation_main-btn {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 740px) {
+    .donation_footer-title {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
     }
 }
 
@@ -1817,6 +2544,13 @@ p {
     }
 }
 
+@media screen and (max-width: 600px) {
+    .donation_footer-amounts--price {
+        width: 100px;
+        height: 100px;
+    }
+}
+
 @media screen and (max-width: 571px) {
     .footer {
         display: grid;
@@ -1834,7 +2568,6 @@ p {
     .footer_img {
         grid-area: Logo;
     }
-
 
     .footer_text {
         display: grid;
@@ -1897,6 +2630,50 @@ p {
     .casaConvivencial_subtitle {
         width: 90%;
     }
+
+    .donationCard_content-card--title {
+        width: 95%;
+        height: 44px;
+        background: linear-gradient(175.85deg, #0393C8 3.38%, #76B7D3 96.63%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 14px;
+        font-family: 'Poppins';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 15px;
+        line-height: 22px;
+        text-align: center;
+        color: #FFFFFF;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto 2rem;
+    }
+
+    .donationCard_content-card {
+        margin: auto;
+        padding-bottom: 2rem;
+        width: 95%;
+        height: max-content;
+        background: #FFFFFF;
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        border-radius: 14px;
+    }
+
+    .donation_footer-content--data--order {
+        flex-direction: column;
+    }
+}
+
+@media screen and (max-width: 543px) {
+    .transfers_content-item {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .transfers_content-item--content {
+        margin: 0;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -1904,31 +2681,48 @@ p {
         width: 90%;
     }
 
-    .line_none{
+    .line_none {
         display: none;
     }
 
-    
+
     .year19 {
         margin: auto;
         left: 0;
     }
-    
+
     .year20 {
         margin: auto;
         left: 0;
     }
-    
+
     .year21 {
         margin: auto;
         left: 0;
     }
-    
+
     .year22 {
         margin: auto;
         left: 0;
     }
 
+    .donation_footer-amounts--price {
+        width: 90px;
+        height: 90px;
+    }
+
+    .donation_footer-content {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: auto;
+        margin-bottom: 1rem;
+    }
+
+    .donation_footer-content--img {
+        margin: 1rem;
+    }
 }
 
 @media screen and (max-width: 464px) {
@@ -1947,7 +2741,17 @@ p {
 
 }
 
+@media screen and (min-width: 426px) {
+    .mobile {
+        display: none;
+    }
+}
+
 @media screen and (max-width: 425px) {
+
+    .web {
+        display: none;
+    }
 
     .cardList {
         margin: 0 auto 4rem;
@@ -2035,6 +2839,24 @@ p {
 
     .contact_logo-img {
         display: none;
+    }
+}
+
+@media screen and (max-width: 394px) {
+    .economicSupport_transfers-content {
+        padding-bottom: .7rem;
+    }
+
+    .economicSupport_transfers-content--item {
+        flex-direction: column;
+    }
+
+    .economicSupport_transfers-content--item---title {
+        margin: auto;
+    }
+
+    .economicSupport_transfers-content--item---content {
+        margin: auto;
     }
 }
 

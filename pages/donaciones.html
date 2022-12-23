@@ -29,7 +29,7 @@
             <div class="container-fluid">
                 <div class="d-flex navbar-compact">
                     <a href="../index.html"><img src="../images/logo/logo.png" alt="Logo" class="logo_brand"></a>
-                    <a class="btn_donate-statick none" href="../pages/contacto.html">DONAR</a>
+                    <a class="btn_donate-statick none" href="../pages/donaciones.html">DONAR</a>
                 </div>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -41,7 +41,8 @@
                         <a class="nav-link item_margin-top" href="../pages/nuestraHistoria.html">NUESTRA HISTORIA</a>
                         <a class="nav-link" href="../pages/donaciones.html">CÓMO AYUDO</a>
                         <a class="nav-link" href="../pages/nuestroProyecto.html">NUESTRO PROYECTO</a>
-                        <a class="nav-link" href="https://www.instagram.com/creciendoentuhistoria/?hl=es-la" target="_blank">NOVEDADES</a>
+                        <a class="nav-link" href="https://www.instagram.com/creciendoentuhistoria/?hl=es-la"
+                            target="_blank">NOVEDADES</a>
                         <a class="nav-link item_margin-bottom" href="./contacto.html">CONTACTO</a>
                         <a class="btn_donate notNone" href="../pages/donaciones.html">DONAR</a>
                     </div>
@@ -52,8 +53,7 @@
     <main class="main_container">
         <article class="main_header-page">
             <div class="header_filter"></div>
-            <img src="../images/headers/galeria.jfif" class="d-block w-100 main_header-img"
-                alt="Encabezado Galería">
+            <img src="../images/headers/donaciones.jpg" class="d-block w-100 main_header-img" alt="Encabezado Galería">
             <div class="content--img">
                 <h1 class="context_tittle-page">CÓMO AYUDO<br>DONACIONES</h1>
                 <div class="wave_container">
@@ -71,8 +71,205 @@
             <img class="band" src="../images/band.png">
         </div>
 
-        <article style="height: 100vh;">
+        <article class="donation web">
+            <div class="donation_header">
+                <h2 class="donation_header-title">A través de</h2>
+                <img class="donation_header-img" src="../images/support/mercadoPago.png" alt="Logo Mercado pago">
+            </div>
+            <div class="donation_main">
+                <h3 class="donation_main-title">Seleccioná el tipo de donación</h3>
+                <button onclick="showMensual();" class="donation_main-btn mensual">MENSUAL</button>
+                <button onclick="showUnicaVez();" class="donation_main-btn unica-vez">POR ÚNICA VEZ</button>
+            </div>
+            <div id="cardDonation" class="donation_footer">
+                <div id="mensual">
+                    <h3 class="donation_footer-title">Seleccioná tu monto</h3>
+                    <div class="donation_footer-amounts">
+                        <a target="_blank" class="donation_footer-amounts--price"
+                            href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847eb684fe017ec0d3a8b4037b">$2.000</a>
+                        <a target="_blank" class="donation_footer-amounts--price"
+                            href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847eb6850d017ec0cbc27103a1">$2.500</a>
+                        <a target="_blank" class="donation_footer-amounts--price"
+                            href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808482ff24d1018314e6f76c0884">$3.000</a>
+                        <a target="_blank" class="donation_footer-amounts--price"
+                            href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847eb9ffbc017ec0972117024d">$5.000</a>
+                    </div>
+                </div>
+                <div id="unicaVez">
+                    <h3 class="donation_footer-title">Escaneá el QR desde Mercado Pago o hacé<a target="_blank"
+                            href="https://link.mercadopago.com.ar/creciendoentuhistori"
+                            class="donation_title-margin">click aquí</a></h3>
+                    <div class="donation_footer-content">
+                        <img class="donation_footer-content--img" src="../images/support/qr.png" alt="Qr">
+                        <div class="donation_footer-content--data">
+                            <div class="donation_footer-content--data--order">
+                                <p class="donation_footer-content--data--order--title">Alias:</p>
+                                <p class="donation_footer-content--data--order--content">creciendo.mp</p>
+                            </div>
+                            <div class="donation_footer-content--data--order">
+                                <p class="donation_footer-content--data--order--title">CVU:</p>
+                                <p class="donation_footer-content--data--order--content">0000003100092151924649</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </article>
 
+        <article class="transferDonation web">
+            <div class="transfers">
+                <h2 class="transfers_title">A través de depósitos o transferencias</h2>
+                <div class="transfers_content">
+                    <div class="transfers_content-item">
+                        <p class="transfers_content-item--title">Banco:</p>
+                        <p class="transfers_content-item--content">Credicoop</p>
+                    </div>
+                    <div class="transfers_content-item">
+                        <p class="transfers_content-item--title">Nro. de Cuenta:</p>
+                        <p class="transfers_content-item--content">CC$ 191001063246/2</p>
+                    </div>
+                    <div class="transfers_content-item">
+                        <p class="transfers_content-item--title">Alias:</p>
+                        <p class="transfers_content-item--content">creciendoac</p>
+                    </div>
+                    <div class="transfers_content-item">
+                        <p class="transfers_content-item--title">CBU:</p>
+                        <p class="transfers_content-item--content">1910001855000106324628</p>
+                    </div>
+                </div>
+            </div>
+            <div class="donationVideo">
+
+            </div>
+        </article>
+
+        <article class="donationCard web">
+            <h2 class="donationCard_tittle">Otras formas de ayudar</h2>
+            <div class="donationCard_content">
+                <div class="donationCard_content-card voluntariado">
+                    <h3 class="donationCard_content-card--title">VOLUNTARIADO</h3>
+                    <p class="donationCard_content-card--text">Participar de forma voluntaria de alguna de nuestras
+                        actividades:</p>
+                    <p class="donationCard_content-card--text donationMargin"><b>• Actividades recreativas:</b>
+                        Acompañar alguna de las actividades que se realicen.</p>
+                    <p class="donationCard_content-card--text donationMargin"><b>• Apoyo escolar:</b> Acompañamiento
+                        educativo</p>
+                    <p class="donationCard_content-card--text donationMargin"><b>• Dictado de talleres:</b>
+                        ¿Querrías transmitir algún conocimiento en alguna área de tu expertis?</p>
+                    <p class="donationCard_content-card--text donationMargin"><b>• Aporte profesional:</b> ¿Te
+                        gustaría donar tus servicios profesionales?</p>
+                </div>
+                <div class="donationCard_content-card donacion-material">
+                    <h3 class="donationCard_content-card--title">DONACIÓN MATERIAL / APORTE INTELECTUAL</h3>
+                    <p class="donationCard_content-card--text"><b>Donación material</b></p>
+                    <p class="donationCard_content-card--text donationMargin">• Todo aporte no monetario (calzado,
+                        ropa, otros). <br> <a target="_blank" href="https://api.whatsapp.com/send?phone=5491122720752"
+                            class="donationCard_footer-text--decoration">Contactate</a> con nosotros para
+                        coordinar.</p>
+                    <p class="donationCard_content-card--text"><b>Aporte intelectual</b></p>
+                    <p class="donationCard_content-card--text donationMargin"><b>• Con una idea:</b> ¿Se te ocurre
+                        alguna idea que nos pueda ayudar a seguir creciendo?</p>
+                    <p class="donationCard_content-card--text donationMargin"><b>• Con un contacto:</b> ¿Conocés a
+                        alguien que nos pueda potenciar en nuestra misión?</p>
+                </div>
+            </div>
+            <div class="donationCard_footer">
+                <p class="donationCard_footer-title">¿Se te ocurre otra manera de ayudarnos?</p>
+                <p class="donationCard_footer-text"> <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5491122720752"
+                        class="donationCard_footer-text--decoration">Escribinos</a> y contanos cómo te gustaría ser
+                    parte del proyecto.</p>
+            </div>
+        </article>
+
+
+        <article class="economicSupport mobile">
+            <div class="economicSupport_title">
+                <h2 class="economicSupport_title-title">APOYO ECONÓMICO</h2>
+            </div>
+            <p class="economicSupport_text">Podés hacer donaciones mensuales o únicas a través de MercadoPago o por
+                transferencia bancaria.
+            </p>
+            <div class="economicSupport_donation">
+                <div class="economicSupport_donation-title">
+                    <h3 class="economicSupport_donation-title--text">A través de</h3>
+                    <img class="economicSupport_donation-title--img" src="../images/support/mercadoPago.png">
+                </div>
+                <div class="economicSupport_donation-main">
+                    <h4 class="economicSupport_donation-main--title">Seleccioná el tipo de donación</h4>
+                    <button onclick="showMensual();" class="economicSupport_donation-main--btn mensual">MENSUAL</button>
+                    <button onclick="showUnicaVez();" class="economicSupport_donation-main--btn unica-vez">POR ÚNICA VEZ</button>
+                </div>
+                <div id="cardDonation" class="donation_footer">
+                    <div id="mensual">
+                        <h3 class="donation_footer-title">Seleccioná tu monto</h3>
+                        <div class="donation_footer-amounts">
+                            <a target="_blank" class="donation_footer-amounts--price"
+                                href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847eb684fe017ec0d3a8b4037b">$2.000</a>
+                            <a target="_blank" class="donation_footer-amounts--price"
+                                href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847eb6850d017ec0cbc27103a1">$2.500</a>
+                            <a target="_blank" class="donation_footer-amounts--price"
+                                href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c93808482ff24d1018314e6f76c0884">$3.000</a>
+                            <a target="_blank" class="donation_footer-amounts--price"
+                                href="https://www.mercadopago.com.ar/subscriptions/checkout?preapproval_plan_id=2c9380847eb9ffbc017ec0972117024d">$5.000</a>
+                        </div>
+                    </div>
+                    <div id="unicaVez">
+                        <h3 class="donation_footer-title">¡<a target="_blank"
+                                href="https://link.mercadopago.com.ar/creciendoentuhistori"
+                                >Apretá acá</a> y doná directamente!</h3>
+                        <div class="donation_footer-content">
+                            <img class="donation_footer-content--img" src="../images/support/qr.png" alt="Qr">
+                            <div class="donation_footer-content--data">
+                                <div class="donation_footer-content--data--order">
+                                    <p class="donation_footer-content--data--order--title">Alias:</p>
+                                    <p class="donation_footer-content--data--order--content">creciendo.mp</p>
+                                </div>
+                                <div class="donation_footer-content--data--order">
+                                    <p class="donation_footer-content--data--order--title">CVU:</p>
+                                    <p class="donation_footer-content--data--order--content">0000003100092151924649</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div style="width: 90%; margin: auto;">
+                <h3 class="economicSupport_transfers">A través de transferencia bancaria</h3>
+                <div class="economicSupport_transfers-content">
+                <div class="economicSupport_transfers-content--item">
+                    <p class="economicSupport_transfers-content--item---title">Banco:</p>
+                    <p class="economicSupport_transfers-content--item---content">Credicoop</p>
+                </div>
+                <div class="economicSupport_transfers-content--item">
+                    <p class="economicSupport_transfers-content--item---title">Nro. de Cuenta:</p>
+                    <p class="economicSupport_transfers-content--item---content">CC$ 191001063246/2</p>
+                </div>
+                <div class="economicSupport_transfers-content--item">
+                    <p class="economicSupport_transfers-content--item---title">Alias:</p>
+                    <p class="economicSupport_transfers-content--item---content">creciendoac</p>
+                </div>
+                <div class="economicSupport_transfers-content--item">
+                    <p class="economicSupport_transfers-content--item---title">CBU:</p>
+                    <p class="economicSupport_transfers-content--item---content">1910001855000106324628</p>
+                </div>
+            </div>
+        </div>
+        </article>
+
+        <article class="intelectualSupport mobile">
+            <h2 class="intelectualSupport_title">VOLUNTARIADO<br>APOYO INTELECTUAL</h2>
+            <div class="intelectualSupport_content">
+                <div class="intelectualSupport_content_items">
+                    <p class="intelectualSupport_content_items--item">• Actividades recreativas.</p>
+                    <p class="intelectualSupport_content_items--item">• Apoyo escolar; dictado de talleres.</p>
+                </div>
+                <p class="intelectualSupport_content_items--items">Podes ayudarnos también donando calzado, ropa
+                    deportiva, muebles en buen estado.</p>
+                <p class="intelectualSupport_content_items--items">Tu ayuda es siempre bienvenida, <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5491122720752"
+                        class="intelectualSupport_decoration"><b>contactanos</b></a>.</p>
+            </div>
         </article>
 
     </main>
@@ -126,6 +323,28 @@
     <script>
         AOS.init();
     </script>
+    <script>
+        let buttons = document.querySelectorAll("button");
+
+        buttons.forEach(button => {
+            button.addEventListener("click", function () {
+                buttons.forEach(btn => btn.classList.remove("active"));
+                this.classList.add("active");
+            })
+        })
+        function showMensual() {
+            document.getElementById("unicaVez").style.display = "none";
+            document.getElementById("cardDonation").style.display = "block";
+            document.getElementById("mensual").style.display = "block";
+            btnEl.classList.add("special");
+        }
+        function showUnicaVez() {
+            document.getElementById("mensual").style.display = "none";
+            document.getElementById("cardDonation").style.display = "block";
+            document.getElementById("unicaVez").style.display = "block";
+        }
+    </script>
+
 </body>
 
 </html>
