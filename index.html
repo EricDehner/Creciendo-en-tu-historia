@@ -52,16 +52,29 @@
             </div>
         </nav>
     </header>
-    <main class="main_container">
-        <div>
-            <img class="band" src="../images/band.png">
-        </div>
+    <main class="main_container band_index">
         <article class="carousell">
-            <img src="./images/index/IMG_4044.jfif" class="d-block w-100 main_header-img">
+            <div id="carouselExampleFade" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="./images/index/header1.jfif" class="d-block w-100 Imagen1 main_header-img" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/index/header2.jpeg" class="d-block w-100 Imagen2 main_header-img" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/index/header3.jpeg" class="d-block w-100 Imagen3 main_header-img" alt="">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="./images/index/header4.jfif" class="d-block w-100 Imagen4 main_header-img" alt="">
+                    </div>
+                </div>
+            </div>
             <div class=" content--img">
                 <div class="content-container">
                     <h1 class="context_tittle">CRECIENDO EN TU HISTORIA</h1>
-                    <p class="context_text">Somos una asociación que trabaja con niños, niñas y adolecentes en situación de calle y con consumo que buscan generar un cambio en sus vidas.</p>
+                    <p class="context_text">Somos una asociación que trabaja con niños, niñas y adolecentes en situación
+                        de calle y con consumo que buscan generar un cambio en sus vidas.</p>
                     <a href="./pages/donaciones.html" class="mobile_hidden">
                         <button class="btn_donate-large" data-aos-once="true" data-aos-delay="150"
                             data-aos-duration="500" data-aos="zoom-in-up">DONAR AHORA</button>
@@ -81,22 +94,22 @@
         <article class="cardList_container">
             <div class="cardList">
                 <div class="card_container history" data-aos-delay="50" data-aos-duration="1500" data-aos-once="true"
-                data-aos="fade-right">
-                    <div>
+                    data-aos="fade-right">
+                    <a href="./pages/nuestraHistoria.html" class="decoration">
                         <img src="./images/index/historia.jfif" alt="Nuestra historia" class="card_img">
-                    </div>
-                    <div class="card_text">
-                        <h2 class="card_text-tittle">Nuestra Historia</h2>
-                    </div>
+                        <div class="card_text">
+                            <h2 class="card_text-tittle">Nuestra Historia</h2>
+                        </div>
+                    </a>
                 </div>
                 <div class="card_container proyect" data-aos-delay="50" data-aos-duration="1500" data-aos-once="true"
                     data-aos="fade-left">
-                    <div>
+                    <a href="./pages/nuestroProyecto.html" class="decoration">
                         <img src="./images/index/proyecto.jpg" alt="Nuestros proyectos" class="card_img">
-                    </div>
-                    <div class="card_text">
-                        <h2 class="card_text-tittle">Nuestro Proyecto</h2>
-                    </div>
+                        <div class="card_text">
+                            <h2 class="card_text-tittle">Nuestro Proyecto</h2>
+                        </div>
+                    </a>
                 </div>
                 <div class="card_container-images gallery" data-aos-delay="50" data-aos-duration="1500"
                     data-aos-once="true" data-aos="fade-up">
@@ -109,7 +122,7 @@
                 </div>
             </div>
         </article>
-        <article class="supp_container">
+        <article class="supp_container web">
             <img src="./images/logo/logo.png" alt="Logo Creciendo En Tu Historia" class="support_logo">
             <div class="support">
                 <h2 class="support_tittle mobile_hidden">AYUDA A CRECIENDO EN TU HISTORIA</h2>
@@ -145,17 +158,16 @@
                             <div class="qr">
                                 <img class="mP_icon" src="./images/support/mercadoPago.png" alt="Mercado pago">
                                 <img class="qr_icon" src="./images/support/qr.png" alt="qr">
-                                <p class="support_item-cards">Escaneá directamente el QR.</p>
                             </div>
                             <div class="cbu">
                                 <h3 class="cbu_tittle numberAcc">Transferencia bancaria</h3>
-                                <div>
+                                <div class="cbu_content">
                                     <div class="d-flex numberAcc">
                                         <p class="cbu_type">Banco:</p>
                                         <p class="cbu_description">Credicoop</p>
                                     </div>
                                     <div class="d-flex numberAcc">
-                                        <p class="cbu_type">Nro. de Cuenta:</p>
+                                        <p class="cbu_type cbu_type-flex">Nro. de Cuenta:</p>
                                         <p class="cbu_description">CC$ 191001063246/2</p>
                                     </div>
                                     <div class="d-flex numberAcc">
@@ -170,15 +182,65 @@
                                     </div>
                                 </div>
                             </div>
+                            
                         </div>
+                        <p class="support_item-cards support_item-cards-description">Escaneá el QR desde Mercado Pago.</p>
                         <p class="support_item-cards">• Podes ayudarnos también donando calzado, ropa deportiva,
                             muebles en
                             buen estado. ¡<a class="b" href="./pages/contacto.html#contacto"><b>Contactanos</b></a>
                             para coordinar!</p>
                     </div>
-
         </article>
-
+        <article class="economicSupport mobile">
+            <div class="economicSupport_title">
+                <h2 class="economicSupport_title-title">APOYO ECONÓMICO<img class="tittle_icon"
+                    src="./images/supportIcons/hand.svg"></h2>
+            </div>
+            <p class="economicSupport_text">Podés hacer donaciones mensuales o únicas a través de MercadoPago o por
+                transferencia bancaria.
+            </p>
+            <div class="economicSupport_donation">
+                <div class="economicSupport_donation-title">
+                    <h3 class="economicSupport_donation-title--text_mobile">¡Donar ahora por <a class="economicSupport_donation-title--text_mobile-a" href="./pages/donaciones.html">Mercado Pago</a>!</h3>
+                    <img class="economicSupport_donation-title--img_mobile" src="../images/support/mercadoPago.png">
+                </div>
+            </div>
+            <div class="economicSupport-web">
+                <h3 class="economicSupport_transfers">A través de transferencia bancaria</h3>
+                <div class="economicSupport_transfers-content">
+                <div class="economicSupport_transfers-content--item">
+                    <p class="economicSupport_transfers-content--item---title">Banco:</p>
+                    <p class="economicSupport_transfers-content--item---content">Credicoop</p>
+                </div>
+                <div class="economicSupport_transfers-content--item">
+                    <p class="economicSupport_transfers-content--item---title">Nro. de Cuenta:</p>
+                    <p class="economicSupport_transfers-content--item---content">CC$ 191001063246/2</p>
+                </div>
+                <div class="economicSupport_transfers-content--item">
+                    <p class="economicSupport_transfers-content--item---title">Alias:</p>
+                    <p class="economicSupport_transfers-content--item---content">creciendoac</p>
+                </div>
+                <div class="economicSupport_transfers-content--item">
+                    <p class="economicSupport_transfers-content--item---title">CBU:</p>
+                    <p class="economicSupport_transfers-content--item---content">1910001855000106324628</p>
+                </div>
+            </div>
+        </div>
+        </article>
+        <article class="intelectualSupport mobile">
+            <h2 class="intelectualSupport_title">VOLUNTARIADO<br>APOYO INTELECTUAL</h2>
+            <div class="intelectualSupport_content">
+                <div class="intelectualSupport_content_items">
+                    <p class="intelectualSupport_content_items--item">• Actividades recreativas.</p>
+                    <p class="intelectualSupport_content_items--item">• Apoyo escolar; dictado de talleres.</p>
+                </div>
+                <p class="intelectualSupport_content_items--items">Podes ayudarnos también donando calzado, ropa
+                    deportiva, muebles en buen estado.</p>
+                <p class="intelectualSupport_content_items--items">Tu ayuda es siempre bienvenida, <a target="_blank"
+                        href="https://api.whatsapp.com/send?phone=5491122720752"
+                        class="intelectualSupport_decoration"><b>contactanos</b></a>.</p>
+            </div>
+        </article>
     </main>
     <footer class="footer_container">
         <div class="footer">
