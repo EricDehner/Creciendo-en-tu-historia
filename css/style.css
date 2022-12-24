@@ -191,7 +191,7 @@ body {
     align-items: center;
 }
 
-.footer_tittle {
+.footer_title {
     margin: 5.5rem 3rem 3rem 3rem;
     font-size: 1.2rem;
     font-family: 'Poppins', sans-serif;
@@ -199,7 +199,7 @@ body {
     font-weight: 600;
 }
 
-.footer_subtittle {
+.footer_subtitle {
     text-align: center;
     font-size: 1.1rem;
     margin-bottom: 1rem;
@@ -208,7 +208,7 @@ body {
     transition: .2s all ease-in-out;
 }
 
-.footer_subtittle:hover {
+.footer_subtitle:hover {
     color: rgb(0, 0, 0);
 }
 
@@ -253,7 +253,7 @@ body {
     filter: drop-shadow(0 0 8px rgba(0, 0, 0, 0.158));
 }
 
-.footer_tittle-icons {
+.footer_title-icons {
     font-family: 'Poppins', sans-serif;
     margin: 0 2rem;
     font-size: 1rem;
@@ -345,7 +345,7 @@ body {
     bottom: 9rem;
 }
 
-.card_text-tittle {
+.card_text-title {
     margin: 0 auto;
     width: 300px;
     font-size: 2rem;
@@ -445,7 +445,7 @@ body {
     z-index: 10;
 }
 
-.context_tittle-page {
+.context_title-page {
     position: absolute;
     top: 30%;
     text-align: center;
@@ -456,7 +456,7 @@ body {
     font-size: 50px;
 }
 
-.context_tittle {
+.context_title {
     color: white;
     width: 100%;
     filter: drop-shadow(0 0 2px rgba(0, 0, 0, 1));
@@ -549,7 +549,7 @@ body {
     min-width: 250px;
 }
 
-.support_tittle {
+.support_title {
     margin: 0 auto 2rem;
     width: 100%;
     display: flex;
@@ -567,7 +567,7 @@ body {
     color: #38B0C1;
 }
 
-.support_tittle-cards {
+.support_title-cards {
     font-family: 'Poppins';
     font-style: normal;
     font-weight: 900;
@@ -653,7 +653,7 @@ body {
     width: 90%;
 }
 
-.cbu_tittle {
+.cbu_title {
     color: #0393C8;
     font-family: 'Poppins';
     font-style: normal;
@@ -691,7 +691,7 @@ body {
     color: black;
 }
 
-.tittle_icon {
+.title_icon {
     margin-left: .4rem;
     margin-bottom: .2rem;
 }
@@ -955,7 +955,7 @@ p {
     left: 50%;
 }
 
-.history_tittle {
+.history_title {
     font-family: 'Indie Flower';
     font-style: normal;
     font-weight: 400;
@@ -1639,7 +1639,7 @@ donation_main-btn:hover {
     border-radius: 10px;
 }
 
-.donationCard_tittle {
+.donationCard_title {
     display: flex;
     justify-content: center;
     font-family: 'Poppins';
@@ -2085,7 +2085,7 @@ economicSupport_donation-main--btn:hover {
 }
 
 @media screen and (max-width: 1366px) {
-    .history_tittle {
+    .history_title {
         font-family: 'Indie Flower';
         font-style: normal;
         font-weight: 400;
@@ -2097,11 +2097,11 @@ economicSupport_donation-main--btn:hover {
         text-align: center;
     }
 
-    .context_tittle-page {
+    .context_title-page {
         font-size: 40px;
     }
 
-    .context_tittle {
+    .context_title {
         font-size: 35px;
         margin-bottom: .5rem;
     }
@@ -2248,11 +2248,11 @@ economicSupport_donation-main--btn:hover {
         justify-content: cennter;
     }
 
-    .footer_tittle {
+    .footer_title {
         margin: 2rem 3rem;
     }
 
-    .footer_tittle-icons {
+    .footer_title-icons {
         font-size: 1.2rem;
     }
 }
@@ -2367,7 +2367,7 @@ economicSupport_donation-main--btn:hover {
 }
 
 @media screen and (max-width: 1024px) {
-    .history_tittle {
+    .history_title {
         width: 80%;
     }
 
@@ -2469,7 +2469,7 @@ economicSupport_donation-main--btn:hover {
         transform: rotate(30deg);
     }
 
-    .history_tittle {
+    .history_title {
         font-family: 'Indie Flower';
         font-style: normal;
         font-weight: 400;
@@ -2483,11 +2483,11 @@ economicSupport_donation-main--btn:hover {
 }
 
 @media screen and (max-width: 828px) {
-    .footer_tittle {
+    .footer_title {
         font-size: 1.1rem;
     }
 
-    .footer_subtittle {
+    .footer_subtitle {
         font-size: 1rem;
     }
 
@@ -2580,7 +2580,7 @@ economicSupport_donation-main--btn:hover {
         margin-bottom: 0rem;
     }
 
-    .support_tittle {
+    .support_title {
         font-size: 22px;
         line-height: 31px;
     }
@@ -2727,7 +2727,7 @@ economicSupport_donation-main--btn:hover {
         height: 100px;
     }
 
-    .context_tittle {
+    .context_title {
         font-size: 30px;
     }
 
@@ -2790,11 +2790,11 @@ economicSupport_donation-main--btn:hover {
         grid-area: quieroDonar;
     }
 
-    .footer_tittle {
+    .footer_title {
         font-size: 1.2rem;
     }
 
-    .footer_subtittle {
+    .footer_subtitle {
         font-size: 1.1rem;
     }
 
@@ -2818,7 +2818,7 @@ economicSupport_donation-main--btn:hover {
         flex-wrap: wrap;
     }
 
-    .footer_tittle {
+    .footer_title {
         margin: 2rem 3rem;
     }
 
@@ -2954,7 +2954,7 @@ economicSupport_donation-main--btn:hover {
         bottom: -1rem;
     }
 
-    .context_tittle {
+    .context_title {
         text-align: center;
     }
 
@@ -3038,7 +3038,7 @@ economicSupport_donation-main--btn:hover {
         bottom: 2rem;
     }
 
-    .context_tittle {
+    .context_title {
         width: 90%;
         font-size: 23px;
         margin-bottom: 1rem;
@@ -3088,7 +3088,7 @@ economicSupport_donation-main--btn:hover {
         height: 25vh;
     }
 
-    .context_tittle-page {
+    .context_title-page {
         font-size: 2.2rem;
         font-weight: 500;
     }
@@ -3150,7 +3150,7 @@ economicSupport_donation-main--btn:hover {
 
     }
 
-    .card_text-tittle {
+    .card_text-title {
         font-size: 1.6rem;
         width: 250px;
     }
