@@ -135,7 +135,10 @@
             </div>
             <div class="donationVideo">
                 <p class="donationVideo_title">¡Te invitamos a ser parte de su historia!</p>
-                <iframe class="donationVideo_video" width="206" height="376.5" src="https://www.youtube.com/embed/r0489vFPm-U" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                <iframe class="donationVideo_video" width="206" height="376.5"
+                    src="https://www.youtube.com/embed/r0489vFPm-U" title="YouTube video player" frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowfullscreen></iframe>
             </div>
         </article>
         <article class="donationCard web">
@@ -190,7 +193,8 @@
                 <div class="economicSupport_donation-main">
                     <h4 class="economicSupport_donation-main--title">Seleccioná el tipo de donación</h4>
                     <button onclick="showMensual();" class="economicSupport_donation-main--btn mensual">MENSUAL</button>
-                    <button onclick="showUnicaVez();" class="economicSupport_donation-main--btn unica-vez">POR ÚNICA VEZ</button>
+                    <button onclick="showUnicaVez();" class="economicSupport_donation-main--btn unica-vez">POR ÚNICA
+                        VEZ</button>
                 </div>
                 <div id="cardDonationx" class="donation_footer">
                     <div id="mensualx">
@@ -208,8 +212,8 @@
                     </div>
                     <div id="unicaVezx">
                         <h3 class="donation_footer-title--web">¡<a target="_blank" class="donation_footer-title--a"
-                                href="https://link.mercadopago.com.ar/creciendoentuhistori"
-                                >Apretá acá</a> y doná directamente!</h3>
+                                href="https://link.mercadopago.com.ar/creciendoentuhistori">Apretá acá</a> y doná
+                            directamente!</h3>
                         <div class="donation_footer-content">
                             <img class="donation_footer-content--img" src="../images/support/qr.png" alt="Qr">
                             <div class="donation_footer-content--data">
@@ -229,24 +233,24 @@
             <div class="economicSupport-web">
                 <h3 class="economicSupport_transfers">A través de transferencia bancaria</h3>
                 <div class="economicSupport_transfers-content">
-                <div class="economicSupport_transfers-content--item">
-                    <p class="economicSupport_transfers-content--item---title">Banco:</p>
-                    <p class="economicSupport_transfers-content--item---content">Credicoop</p>
-                </div>
-                <div class="economicSupport_transfers-content--item">
-                    <p class="economicSupport_transfers-content--item---title">Nro. de Cuenta:</p>
-                    <p class="economicSupport_transfers-content--item---content">CC$ 191001063246/2</p>
-                </div>
-                <div class="economicSupport_transfers-content--item">
-                    <p class="economicSupport_transfers-content--item---title">Alias:</p>
-                    <p class="economicSupport_transfers-content--item---content">creciendoac</p>
-                </div>
-                <div class="economicSupport_transfers-content--item">
-                    <p class="economicSupport_transfers-content--item---title">CBU:</p>
-                    <p class="economicSupport_transfers-content--item---content">1910001855000106324628</p>
+                    <div class="economicSupport_transfers-content--item">
+                        <p class="economicSupport_transfers-content--item---title">Banco:</p>
+                        <p class="economicSupport_transfers-content--item---content">Credicoop</p>
+                    </div>
+                    <div class="economicSupport_transfers-content--item">
+                        <p class="economicSupport_transfers-content--item---title">Nro. de Cuenta:</p>
+                        <p class="economicSupport_transfers-content--item---content">CC$ 191001063246/2</p>
+                    </div>
+                    <div class="economicSupport_transfers-content--item">
+                        <p class="economicSupport_transfers-content--item---title">Alias:</p>
+                        <p class="economicSupport_transfers-content--item---content">creciendoac</p>
+                    </div>
+                    <div class="economicSupport_transfers-content--item">
+                        <p class="economicSupport_transfers-content--item---title">CBU:</p>
+                        <p class="economicSupport_transfers-content--item---content">1910001855000106324628</p>
+                    </div>
                 </div>
             </div>
-        </div>
         </article>
         <article class="intelectualSupport mobile">
             <h2 class="intelectualSupport_title">VOLUNTARIADO<br>APOYO INTELECTUAL</h2>
@@ -254,11 +258,13 @@
                 <div class="intelectualSupport_content_items">
                     <p class="intelectualSupport_content_items--item">• Actividades recreativas.</p>
                     <p class="intelectualSupport_content_items--item">• Apoyo escolar; dictado de talleres.</p>
+                    <p class="intelectualSupport_content_items--item">• Con una idea o un contacto que pueda
+                        potenciarnos en nuestra misión.</p>
+                    <p class="intelectualSupport_content_items--items">• Podes ayudarnos también donando calzado, ropa
+                        deportiva, muebles en buen estado.</p>
                 </div>
-                <p class="intelectualSupport_content_items--items">Podes ayudarnos también donando calzado, ropa
-                    deportiva, muebles en buen estado.</p>
-                <p class="intelectualSupport_content_items--items">Tu ayuda es siempre bienvenida, <a href="./contacto.html"
-                        class="intelectualSupport_decoration"><b>contactanos</b></a>.</p>
+                <p class="intelectualSupport_content_items--items">Tu ayuda es siempre bienvenida, <a
+                        href="./contacto.html" class="intelectualSupport_decoration"><b>contactanos</b></a>.</p>
             </div>
         </article>
     </main>
@@ -312,33 +318,7 @@
     <script>
         AOS.init();
     </script>
-    <script>
-        let buttons = document.querySelectorAll("button");
-
-        buttons.forEach(button => {
-            button.addEventListener("click", function () {
-                buttons.forEach(btn => btn.classList.remove("active"));
-                this.classList.add("active");
-            })
-        })
-        function showMensual() {
-            document.getElementById("unicaVez").style.display = "none";
-            document.getElementById("unicaVezx").style.display = "none";
-            document.getElementById("cardDonation").style.display = "block";
-            document.getElementById("cardDonationx").style.display = "block";
-            document.getElementById("mensual").style.display = "block";
-            document.getElementById("mensualx").style.display = "block";
-        }
-        function showUnicaVez() {
-            document.getElementById("mensual").style.display = "none";
-            document.getElementById("mensualx").style.display = "none";
-            document.getElementById("cardDonation").style.display = "block";
-            document.getElementById("cardDonationx").style.display = "block";
-            document.getElementById("unicaVez").style.display = "block";
-            document.getElementById("unicaVezx").style.display = "block";
-        }
-    </script>
-
+    <script src="../script/script.js"></script>
 </body>
 
 </html>
