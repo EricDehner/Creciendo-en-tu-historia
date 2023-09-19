@@ -16,6 +16,40 @@ body {
         "main"
         "footer";
 }
+.spiner_container {
+    display: none;
+    transition: all 1s ease-in-out;
+    overflow: auto;
+}
+
+
+.spiner_container-active {
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0);
+    position: fixed; 
+    top: 0;
+    left: 0;
+    z-index: 11;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    backdrop-filter: blur(10px); 
+}
+
+.spiner {
+    width: 100px;
+    animation: spin 1.2s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
 
 .navbar {
     background: linear-gradient(89.89deg, #87ECFA -14.89%, #02A4DF 102.52%);
@@ -110,7 +144,6 @@ body {
     border-radius: 5px;
     font-weight: 400;
     filter: drop-shadow(2px 5px 8px rgba(0, 0, 0, 0.134));
-    transition: 1.8s all ease-in-out;
 }
 
 .btn_donate {
@@ -374,48 +407,6 @@ body {
     overflow: hidden;
     margin-bottom: 5rem;
     position: relative;
-}
-
-.Imagen1 {
-    background-color: rgba(255, 0, 0, 0.388);
-    width: 100%;
-    height: 448px;
-    object-fit: cover;
-}
-
-.Imagen2 {
-    background-color: rgba(255, 247, 0, 0.388);
-    width: 100%;
-    object-fit: cover;
-    height: 448px;
-}
-
-.Imagen3 {
-    background-color: rgba(38, 255, 0, 0.388);
-    width: 100%;
-    object-fit: cover;
-    height: 448px;
-}
-
-.Imagen4 {
-    background-color: rgba(0, 255, 217, 0.388);
-    width: 100%;
-    object-fit: cover;
-    height: 448px;
-}
-
-.Imagen5 {
-    background-color: rgba(0, 30, 255, 0.388);
-    width: 100%;
-    object-fit: cover;
-    height: 448px;
-}
-
-.Imagen6 {
-    background-color: rgba(255, 0, 242, 0.388);
-    width: 100%;
-    object-fit: cover;
-    height: 448px;
 }
 
 .main_header-page {
@@ -2261,6 +2252,13 @@ economicSupport_donation-main--btn:hover {
     .support {
         width: 80%;
         min-width: 300px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .nav-link:hover {
+        color: white !important;
+        font-weight: 700;
     }
 }
 
